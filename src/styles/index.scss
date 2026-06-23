@@ -1,0 +1,38 @@
+@import 'base/mixins.scss';
+@import 'var';
+
+html {
+	font-family: $serif-roboto-regular-font;
+	font-size: 10px;
+
+	background-color: $white-color;
+
+	// @media (min-width: 360px) {
+	// 	font-size: 10px;
+	// }
+
+	// @media (min-width: 1920px) {
+	// 	font-size: calc(100vw / 1920 * 10);
+	// }
+}
+
+// img {
+// 	display: block;
+// 	width: 100%;
+// }
+
+.picture {
+	display: block;
+	width: 30rem;
+	height: 32rem;
+}
+
+.text {
+	@include mq('desktop', max) {
+		background-color: $white-color;
+	}
+
+	@include mq('desktop') {
+		background-color: $black-color;
+	}
+}

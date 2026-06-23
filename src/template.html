@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"
+			name="viewport"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header" id="home">
+			<div class="container">
+				<div class="header__content">
+					<a class="logo" href="#home">
+						<svg class="logo__icon" width="19" height="19">
+							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<button class="header__menu btn" type="button">
+						<svg class="logo__icon" width="19" height="19">
+							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</button>
+					<ul class="nav list">
+						<li class="nav__item">
+							<a class="nav__link" href="#home"><p class="nav__text">Home</p></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#home"><p class="nav__text">Explore</p></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#home"><p class="nav__text">Travel</p></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#home"><p class="nav__text">Blog</p></a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#home"><p class="nav__text">Pricing</p></a>
+						</li>
+					</ul>
+					<ul class="header__authentication list">
+						<li class="header__action">
+							<button class="header__btn header__btn--ligin btn" type="button">Login</button>
+						</li>
+						<li class="header__action">
+							<button class="header__btn header__btn--signup btn" type="button">Sign up</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero">
+				<div class="container">
+					<h1 class="hero__title title">Start your unforgettable journey with us.</h1>
+					<h3 class="hero__description">The best travel for your jouney begins now</h3>
+				</div>
+				<form class="hero__form form">
+					<label class="form__label" for="destination"> Destination</label>
+					<input class="form__input" type="text" name="destination" />
+
+					<label class="form__label" for="select">Person</label>
+					<select class="form__select" name="select" id="select">
+						<option value="value1">1</option>
+						<option value="value2" selected>2</option>
+						<option value="value3">3</option>
+					</select>
+
+					<label class="form__label" for="select">Check in</label>
+					<input class="form__input" type="date" name="date" id="date" />
+
+					<label class="form__label" for="select">Check out</label>
+					<input class="form__input" type="date" name="date" id="date" />
+
+					<button class="form__submit" type="submit">
+						<p class="form__text">Book Now</p>
+						<svg class="logo__icon" width="19" height="19">
+							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</button>
+				</form>
+			</section>
+			<section class="destinations">
+				<div class="container">
+					<h1 class="destinations__title title">Popular Destinations</h1>
+					<h3 class="destinations__description">
+						Most popular destinations around the world, from historical places to natural wonders.
+					</h3>
+					<div class="destinations__content">
+						<div class="destinations__swiper">
+							<div class="destinations__wrapper swiper-wrapper">
+								<div class="destinations__slide swiper-slide">
+									<div class="destinations__box">
+										<picture class="destinations__picture picture">
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+											<img
+												class="destinations__img img"
+												src="./assets/img/block.jpg"
+												alt="Monument of Berlin"
+											/>
+										</picture>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<ul class="swich">
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="offers">
+				<div class="container">
+					<h1 class="offers__title title">Special Offer</h1>
+					<h3 class="offers__description">Check out our special offer and discounts</h3>
+					<div class="offers__content">
+						<div class="offers__swiper">
+							<div class="offers__wrapper swiper-wrapper">
+								<div class="offers__slide swiper-slide">
+									<div class="card">
+										<picture class="card__picture picture">
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											/block
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											/block
+											<img class="offers__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<div class="card__info">
+											<h3 class="card__title">Lisbon, Portugal</h3>
+											<ul class="stars stars--5">
+												<li class="stars__star"></li>
+												<li class="stars__star"></li>
+												<li class="stars__star"></li>
+												<li class="stars__star"></li>
+												<li class="stars__star"></li>
+											</ul>
+											<p class="card__text">
+												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+												the renaissance. Passage and going through the cites of the world in classical
+												literature.
+											</p>
+											<div class="card__meta">
+												<p class="card__text">From</p>
+												<p class="card__price">€500</p>
+											</div>
+											<a href="./template.html">Details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<ul class="swich">
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="blog" id="blog">
+				<div class="container">
+					<h1 class="blog__title title">Our Blog</h1>
+					<h3 class="blog__description">An insight the incredible experience in the world</h3>
+					<picture class="blog__picture picture">
+						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+						<img class="blog__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+					</picture>
+					<h1 class="blog__subtitle">Our Blog</h1>
+					<p class="blog__text"></p>
+					<a class="blog__link link" href="./template.html"
+						>Read More
+						<svg class="logo__icon" width="19" height="19">
+							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</div>
+			</section>
+			<section class="planners">
+				<div class="container">
+					<h1 class="planners__title title">Trip Planners</h1>
+					<h3 class="planners__description">
+						20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting
+						and start travelling, start throwing off the bowlines.
+					</h3>
+					<button class="planners__btn" type="button">View all trip plans</button>
+					<div class="planners__swiper">
+						<div class="planners__wrapper swiper-wrapper">
+							<div class="planners__slide swiper-slide">
+								<div class="planners__box">
+									<picture class="planners__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img
+											class="destinations__img img"
+											src="./assets/img/block.jpg"
+											alt="Monument of Berlin"
+										/>
+									</picture>
+									<div>
+										<p>Guided Tour</p>
+										<p>€99/Day</p>
+									</div>
+									<p>Rome City Tour</p>
+									<div>
+										<ul class="stars stars--5">
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+										</ul>
+										<p>7 Days tour</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="container">
+					<h1 class="gallery__title title">Destination Gallery</h1>
+					<h3 class="gallery__description">Our photo gallery on trip</h3>
+				</div>
+				<div class="gallery__content">
+					<div class="gallery__swiper">
+						<div class="gallery__wrapper swiper-wrapper">
+							<div class="gallery__slide swiper-slide">
+								<div class="gallery__box">
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<ul class="swich">
+						<li class="swich__buttons">
+							<svg class="swich__btn" width="19" height="19">
+								<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+							</svg>
+						</li>
+						<li class="swich__buttons">
+							<svg class="swich__btn" width="19" height="19">
+								<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+							</svg>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<h1 class="reviews__title title">Traveler’s Experiences</h1>
+					<h3 class="reviews__description">Our photo gallery on trip</h3>
+
+					<div class="reviews__content">
+						<div class="reviews__swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<div class="review">
+										<picture class="review__picture picture">
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											/block
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											/block
+											<img class="reviews__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<p class="review__text">
+											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+											the renaissance. Passage and going through the cites of the world in classical
+											literature.
+										</p>
+										<ul class="stars stars--5">
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+											<li class="stars__star"></li>
+										</ul>
+										<p class="review__title">John Doe</p>
+										<p class="review__subtitle">Accountant</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<ul class="swich">
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+							<li class="swich__buttons">
+								<svg class="swich__btn" width="19" height="19">
+									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe">
+				<div class="container">
+					<form class="subscribe__form">
+						<h1 class="subscribe__title">Our Newsletter</h1>
+						<label class="subscribe__label" for="mail">Email</label>
+						<input
+							class="subscribe__input"
+							type="email"
+							name="mail"
+							id="mail"
+							placeholder="Enter your email"
+						/>
+						<button class="subscribe__btn" type="submit">Subscribe</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__brand">
+					<a class="logo" href="#home">
+						<svg class="logo__icon" width="19" height="19">
+							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<p class="footer__copyright">Copyright © Travellian 2020 All rights reserved</p>
+				</div>
+				<ul class="footer__columns">
+					<li class="footer__column">
+						<h3 class="footer__title">Menu</h3>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Home</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Explore</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Travel</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Blog</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Pricing</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h3 class="footer__title">Information</h3>
+
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Destinations</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Supports</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Terms & Conditions</a>
+							</li>
+							<li class="footer__item">
+								<a class="footer__link" href="#home">Privacy</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__column">
+						<h3 class="footer__title">Contact Info</h3>
+						<address class="addres">
+							<a class="addres__tel" href="tel:+123 456 789">+123 456 789</a>
+							<a class="addres__mail" href="mailto:info@travellian.com">info@travellian.com</a>
+							<p class="addres__text">1245, New Yourk, USA</p>
+						</address>
+					</li>
+
+					<li class="footer__column">
+						<h3 class="footer__title">Follow us on</h3>
+						<ul class="footer__socials">
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="footer__social">
+								<a class="footer__social_link" href="./index.html">
+									<svg class="footer__icon icon">
+										<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script type="module" src="scripts/index.js"></script>
+	</body>
+</html>
