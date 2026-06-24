@@ -1,0 +1,44 @@
+.header {
+	position: fixed;
+	padding: 2.4rem 0;
+	width: 100%;
+
+	color: $white-color;
+}
+
+.header__container {
+	padding: 0 3.2rem;
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 6rem;
+}
+
+.header__burger {
+	color: $white-color;
+	background-color: transparent;
+	border: none;
+}
+
+.nav {
+	@include mq('desktop', max) {
+		display: none;
+	}
+
+	@include mq('desktop') {
+		display: flex;
+	}
+}
+
+.header__authentication {
+	@include mq('desktop', max) {
+		display: none;
+	}
+
+	@include mq('desktop') {
+		display: flex;
+	}
+}

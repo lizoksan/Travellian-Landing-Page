@@ -2,7 +2,7 @@
 @import 'var';
 
 html {
-	font-family: $serif-roboto-regular-font;
+	font-family: $serif-rubik-font;
 	font-size: 10px;
 
 	background-color: $white-color;
@@ -16,14 +16,45 @@ html {
 	// }
 }
 
-// img {
-// 	display: block;
-// 	width: 100%;
-// }
+.container {
+	padding: 0 1.6rem;
+}
+
+.logo {
+	color: $white-color;
+	text-decoration: none;
+}
+
+.title {
+	margin-bottom: 5.2rem;
+
+	font-size: 4rem;
+	font-family: $font-title;
+	font-weight: 400;
+	color: $accent-dark-color;
+
+	&__border {
+		display: inline-block;
+		padding: 0 0 2rem;
+		border-bottom: 3px solid $accent-color;
+	}
+}
+
+.description {
+	margin-bottom: 10rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: $gray-color;
+}
 
 .picture {
 	display: block;
-	width: 30rem;
+}
+
+img {
+	display: block;
+	border-radius: 2.6rem;
+	width: 28.8rem;
 	height: 32rem;
 }
 
@@ -35,4 +66,41 @@ html {
 	@include mq('desktop') {
 		background-color: $black-color;
 	}
+}
+
+.link {
+	text-decoration: none;
+}
+
+.swich {
+	display: flex;
+	justify-content: center;
+	gap: 4rem;
+
+	&__btn {
+		display: block;
+		padding: 0;
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		color: $accent-dark-color;
+
+		&:hover {
+			--color1: #{$accent-color};
+		}
+
+		&--right {
+			color: $accent-color;
+
+			&:hover {
+				--color1: #{$accent-dark-color};
+			}
+		}
+	}
+}
+
+.stars {
+	display: flex;
+	gap: 0.4rem;
+	color: $star-color;
 }

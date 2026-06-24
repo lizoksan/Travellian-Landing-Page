@@ -144,7 +144,7 @@
 
 $breakpoints: (
 	'tablet': 768px,
-	'desktop': 1024px,
+	'desktop': 1440px,
 	'desktop-wide': 1920px,
 );
 
@@ -171,7 +171,9 @@ $breakpoints: (
 	@font-face {
 		font-family: '#{$fontName}';
 		src: url('#{$fontPath}.eot');
-		src: url('#{$fontPath}.eot?#iefix') format('embedded-opentype'), url('#{$fontPath}.woff') format('woff');
+		src:
+			url('#{$fontPath}.eot?#iefix') format('embedded-opentype'),
+			url('#{$fontPath}.woff') format('woff');
 		font-weight: normal;
 		font-style: normal;
 	}

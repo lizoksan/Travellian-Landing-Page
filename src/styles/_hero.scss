@@ -1,0 +1,71 @@
+.hero {
+	padding: 19.8rem 0;
+	background-image: url(../assets/img/hero-mob.jpg);
+	background-size: cover;
+	color: $white-color;
+
+	&__title {
+		margin-bottom: 1.6rem;
+		color: $white-color;
+		border: none;
+	}
+
+	&__subtitle {
+		margin-bottom: 10rem;
+		font-size: 1.8rem;
+	}
+}
+
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 2rem 2rem 20rem;
+	border-radius: 1.6rem;
+	background-color: $white-color;
+	font-size: 1.4rem;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+	}
+
+	&__label {
+		color: $gray-color;
+		text-transform: uppercase;
+	}
+
+	&__input {
+		padding: 0.5rem 0;
+		color: $accent-dark-color;
+		border: none;
+		border-bottom: 0.1rem solid $black-color;
+		font-family: $font-title;
+	}
+
+	&__submit {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		gap: 5.7rem;
+
+		padding: 4rem 2rem;
+
+		border: none;
+		border-radius: 0 0 1.6rem 1.6rem;
+		background-color: $accent-color;
+		color: $white-color;
+		font-size: 3.6rem;
+		font-family: $font-title;
+
+		&:hover {
+			color: $accent-dark-color;
+		}
+	}
+}

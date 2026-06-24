@@ -1,0 +1,39 @@
+.destinations {
+	padding: 8rem 0;
+
+	&__swiper {
+		margin-bottom: 10rem;
+	}
+
+	&__box {
+		position: relative;
+		color: $white-color;
+	}
+
+	&__img {
+		border-radius: 1.6rem;
+	}
+
+	&__info {
+		position: absolute;
+		bottom: 4.2rem;
+		left: 2rem;
+	}
+
+	&__title {
+		margin-bottom: 1.7rem;
+		font-family: $font-title;
+		font-size: 2.4rem;
+	}
+
+	&__location {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+}

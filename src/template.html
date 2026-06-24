@@ -15,36 +15,36 @@
 	</head>
 	<body>
 		<header class="header" id="home">
-			<div class="container">
+			<div class="header__container container">
 				<div class="header__content">
 					<a class="logo" href="#home">
-						<svg class="logo__icon" width="19" height="19">
-							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+						<svg class="logo__icon" width="140" height="27.5">
+							<use href="./assets/img/symbol-defs.svg#Logo1"></use>
 						</svg>
 					</a>
-					<button class="header__menu btn" type="button">
-						<svg class="logo__icon" width="19" height="19">
-							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
+					<button class="header__burger btn" type="button">
+						<svg class="logo__icon" width="50" height="50">
+							<use href="./assets/img/symbol-defs.svg#hamburger"></use>
 						</svg>
 					</button>
-					<ul class="nav list">
+					<ul class="nav">
 						<li class="nav__item">
-							<a class="nav__link" href="#home"><p class="nav__text">Home</p></a>
+							<a class="nav__link link" href="#home"><p class="nav__text">Home</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#home"><p class="nav__text">Explore</p></a>
+							<a class="nav__link link" href="#home"><p class="nav__text">Explore</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#home"><p class="nav__text">Travel</p></a>
+							<a class="nav__link link" href="#home"><p class="nav__text">Travel</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#home"><p class="nav__text">Blog</p></a>
+							<a class="nav__link link" href="#home"><p class="nav__text">Blog</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#home"><p class="nav__text">Pricing</p></a>
+							<a class="nav__link link" href="#home"><p class="nav__text">Pricing</p></a>
 						</li>
 					</ul>
-					<ul class="header__authentication list">
+					<ul class="header__authentication">
 						<li class="header__action">
 							<button class="header__btn header__btn--ligin btn" type="button">Login</button>
 						</li>
@@ -59,37 +59,44 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title title">Start your unforgettable journey with us.</h1>
-					<h3 class="hero__description">The best travel for your jouney begins now</h3>
+					<h3 class="hero__subtitle">The best travel for your jouney begins now</h3>
+					<form class="form">
+						<div class="form__wrapper">
+							<label class="form__label" for="destination"> Destination</label>
+							<input class="form__input" type="text" id="destination" name="destination" />
+						</div>
+						<div class="form__wrapper">
+							<label class="form__label" for="select">Person</label>
+							<select class="form__input" name="select" id="select">
+								<option value="value1">1</option>
+								<option value="value2" selected>2</option>
+								<option value="value3">3</option>
+							</select>
+						</div>
+						<div class="form__wrapper">
+							<label class="form__label" for="select">Check in</label>
+							<input class="form__input" type="date" name="date" id="date" />
+						</div>
+						<div class="form__wrapper">
+							<label class="form__label" for="select">Check out</label>
+							<input class="form__input" type="date" name="date" id="date" />
+						</div>
+
+						<button class="form__submit" type="submit">
+							Book Now
+
+							<svg class="form__icon" width="21" height="16">
+								<use href="./assets/img/symbol-defs.svg#Arrow-Right"></use>
+							</svg>
+						</button>
+					</form>
 				</div>
-				<form class="hero__form form">
-					<label class="form__label" for="destination"> Destination</label>
-					<input class="form__input" type="text" name="destination" />
-
-					<label class="form__label" for="select">Person</label>
-					<select class="form__select" name="select" id="select">
-						<option value="value1">1</option>
-						<option value="value2" selected>2</option>
-						<option value="value3">3</option>
-					</select>
-
-					<label class="form__label" for="select">Check in</label>
-					<input class="form__input" type="date" name="date" id="date" />
-
-					<label class="form__label" for="select">Check out</label>
-					<input class="form__input" type="date" name="date" id="date" />
-
-					<button class="form__submit" type="submit">
-						<p class="form__text">Book Now</p>
-						<svg class="logo__icon" width="19" height="19">
-							<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-						</svg>
-					</button>
-				</form>
 			</section>
 			<section class="destinations">
 				<div class="container">
-					<h1 class="destinations__title title">Popular Destinations</h1>
-					<h3 class="destinations__description">
+					<h2 class="title">Popular <span class="title__border">Destinations</span></h2>
+
+					<h3 class="description">
 						Most popular destinations around the world, from historical places to natural wonders.
 					</h3>
 					<div class="destinations__content">
@@ -98,75 +105,38 @@
 								<div class="destinations__slide swiper-slide">
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source
+												srcset="./assets/img/dest-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+											<source
+												srcset="./assets/img/dest-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1439px)"
+											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source
+												srcset="./assets/img/dest-mob1.jpg"
+												type="image/jpeg"
+												media="(max-width: 767px)"
+											/>
 
 											<img
 												class="destinations__img img"
-												src="./assets/img/block.jpg"
+												src="./assets/img/dest-mob1.jpg"
 												alt="Monument of Berlin"
 											/>
 										</picture>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<ul class="swich">
-							<li class="swich__buttons">
-								<svg class="swich__btn" width="19" height="19">
-									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-								</svg>
-							</li>
-							<li class="swich__buttons">
-								<svg class="swich__btn" width="19" height="19">
-									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-								</svg>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="offers">
-				<div class="container">
-					<h1 class="offers__title title">Special Offer</h1>
-					<h3 class="offers__description">Check out our special offer and discounts</h3>
-					<div class="offers__content">
-						<div class="offers__swiper">
-							<div class="offers__wrapper swiper-wrapper">
-								<div class="offers__slide swiper-slide">
-									<div class="card">
-										<picture class="card__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
-											/block
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
-
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-											/block
-											<img class="offers__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-										</picture>
-										<div class="card__info">
-											<h3 class="card__title">Lisbon, Portugal</h3>
-											<ul class="stars stars--5">
-												<li class="stars__star"></li>
-												<li class="stars__star"></li>
-												<li class="stars__star"></li>
-												<li class="stars__star"></li>
-												<li class="stars__star"></li>
-											</ul>
-											<p class="card__text">
-												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
-												the renaissance. Passage and going through the cites of the world in classical
-												literature.
-											</p>
-											<div class="card__meta">
-												<p class="card__text">From</p>
-												<p class="card__price">€500</p>
+										<div class="destinations__info">
+											<p class="destinations__title">Monument of Berlin</p>
+											<div class="destinations__location">
+												<svg class="destinations__icon" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#location"></use>
+												</svg>
+												<p class="destinations__text">Berlin, Germany</p>
 											</div>
-											<a href="./template.html">Details</a>
 										</div>
 									</div>
 								</div>
@@ -174,15 +144,117 @@
 						</div>
 
 						<ul class="swich">
-							<li class="swich__buttons">
-								<svg class="swich__btn" width="19" height="19">
-									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-								</svg>
+							<li class="swich__item">
+								<button class="swich__btn">
+									<svg class="swich__icon" width="60" height="66">
+										<use href="./assets/img/symbol-defs.svg#Slide-left"></use>
+									</svg>
+								</button>
 							</li>
-							<li class="swich__buttons">
-								<svg class="swich__btn" width="19" height="19">
-									<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-								</svg>
+							<li class="swich__item">
+								<button class="swich__btn swich__btn--right">
+									<svg class="swich__icon" width="60" height="66">
+										<use href="./assets/img/symbol-defs.svg#Slide-right"></use>
+									</svg>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="offers">
+				<div class="container">
+					<h2 class="title"><span class="title__border">Special Offer</span></h2>
+					<h3 class="offers__description description">Check out our special offer and discounts</h3>
+					<div class="offers__content">
+						<div class="offers__swiper">
+							<div class="offers__wrapper swiper-wrapper">
+								<div class="offers__slide swiper-slide">
+									<div class="card">
+										<picture class="card__picture picture">
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
+
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1439px)"
+											/>
+
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(max-width: 767px)"
+											/>
+
+											<img
+												class="offers__img img"
+												src="./assets/img/offers-mob1.jpg"
+												alt="Monument of Berlin"
+											/>
+										</picture>
+										<div class="card__info">
+											<p class="card__title">Lisbon, Portugal</p>
+											<ul class="card__stars stars">
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+											</ul>
+											<p class="card__text">
+												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+												the renaissance. Passage and going through the cites of the world in classical
+												literature.
+											</p>
+											<div class="card__payment">
+												<p class="card__payment_text">From</p>
+												<p class="card__price">€500</p>
+											</div>
+											<a class="card__btn" href="./template.html">Details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<ul class="swich">
+							<li class="swich__item">
+								<button class="swich__btn">
+									<svg class="swich__icon" width="60" height="66">
+										<use href="./assets/img/symbol-defs.svg#Slide-left"></use>
+									</svg>
+								</button>
+							</li>
+							<li class="swich__item">
+								<button class="swich__btn swich__btn--right">
+									<svg class="swich__icon" width="60" height="66">
+										<use href="./assets/img/symbol-defs.svg#Slide-right"></use>
+									</svg>
+								</button>
 							</li>
 						</ul>
 					</div>
@@ -190,8 +262,8 @@
 			</section>
 			<section class="blog" id="blog">
 				<div class="container">
-					<h1 class="blog__title title">Our Blog</h1>
-					<h3 class="blog__description">An insight the incredible experience in the world</h3>
+					<h2 class="title"><span class="title__border">Our Blog</span></h2>
+					<h3 class="description">An insight the incredible experience in the world</h3>
 					<picture class="blog__picture picture">
 						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
@@ -201,8 +273,15 @@
 
 						<img class="blog__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
 					</picture>
-					<h1 class="blog__subtitle">Our Blog</h1>
-					<p class="blog__text"></p>
+					<p class="blog__subtitle">Beautiful Italy Let’s travel</p>
+					<p class="blog__text">
+						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+						born and I will give you a complete account of the system and expound the actual teachings of the
+						great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or
+						avoids plasure itself, because it is pleasure, but because those who do not know how to pursue
+						pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone
+						who loves or pursues.
+					</p>
 					<a class="blog__link link" href="./template.html"
 						>Read More
 						<svg class="logo__icon" width="19" height="19">
@@ -213,8 +292,8 @@
 			</section>
 			<section class="planners">
 				<div class="container">
-					<h1 class="planners__title title">Trip Planners</h1>
-					<h3 class="planners__description">
+					<h2 class="title"><span class="title__border">Trip Planners</span></h2>
+					<h3 class="description">
 						20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting
 						and start travelling, start throwing off the bowlines.
 					</h3>
@@ -242,12 +321,32 @@
 									</div>
 									<p>Rome City Tour</p>
 									<div>
-										<ul class="stars stars--5">
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
+										<ul class="stars">
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
 										</ul>
 										<p>7 Days tour</p>
 									</div>
@@ -259,8 +358,8 @@
 			</section>
 			<section class="gallery">
 				<div class="container">
-					<h1 class="gallery__title title">Destination Gallery</h1>
-					<h3 class="gallery__description">Our photo gallery on trip</h3>
+					<h2 class="title">Destination <span class="title__border">Gallery</span></h2>
+					<h3 class="description">Our photo gallery on trip</h3>
 				</div>
 				<div class="gallery__content">
 					<div class="gallery__swiper">
@@ -282,23 +381,27 @@
 					</div>
 
 					<ul class="swich">
-						<li class="swich__buttons">
-							<svg class="swich__btn" width="19" height="19">
-								<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-							</svg>
+						<li class="swich__item">
+							<button class="swich__btn">
+								<svg class="swich__icon" width="60" height="66">
+									<use href="./assets/img/symbol-defs.svg#Slide-left"></use>
+								</svg>
+							</button>
 						</li>
-						<li class="swich__buttons">
-							<svg class="swich__btn" width="19" height="19">
-								<use href="./assets/img/symbol-defs.svg#icon-facebook"></use>
-							</svg>
+						<li class="swich__item">
+							<button class="swich__btn swich__btn--right">
+								<svg class="swich__icon" width="60" height="66">
+									<use href="./assets/img/symbol-defs.svg#Slide-right"></use>
+								</svg>
+							</button>
 						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="reviews">
 				<div class="container">
-					<h1 class="reviews__title title">Traveler’s Experiences</h1>
-					<h3 class="reviews__description">Our photo gallery on trip</h3>
+					<h2 class="title">Traveler’s <span class="title__border">Experiences</span></h2>
+					<h3 class="description">Here some awesome feedback from our travelers</h3>
 
 					<div class="reviews__content">
 						<div class="reviews__swiper">
@@ -307,24 +410,45 @@
 									<div class="review">
 										<picture class="review__picture picture">
 											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
-											/block
+
 											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
 
 											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-											/block
+
 											<img class="reviews__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
 										</picture>
 										<p class="review__text">
-											5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
-											the renaissance. Passage and going through the cites of the world in classical
-											literature.
+											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+											pain was born and I will give you a complete account of the system and expound the
+											actual teachings of the great explorer of the truth, the master- builder of human
+											happiness.
 										</p>
-										<ul class="stars stars--5">
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
-											<li class="stars__star"></li>
+										<ul class="stars">
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
 										</ul>
 										<p class="review__title">John Doe</p>
 										<p class="review__subtitle">Accountant</p>
@@ -351,7 +475,7 @@
 			<section class="subscribe">
 				<div class="container">
 					<form class="subscribe__form">
-						<h1 class="subscribe__title">Our Newsletter</h1>
+						<h2 class="subscribe__title title">Our Newsletter</h2>
 						<label class="subscribe__label" for="mail">Email</label>
 						<input
 							class="subscribe__input"
@@ -381,19 +505,19 @@
 
 						<ul class="footer__list">
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Home</a>
+								<a class="footer__link link" href="#home">Home</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Explore</a>
+								<a class="footer__link link" href="#home">Explore</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Travel</a>
+								<a class="footer__link link" href="#home">Travel</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Blog</a>
+								<a class="footer__link link" href="#home">Blog</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Pricing</a>
+								<a class="footer__link link" href="#home">Pricing</a>
 							</li>
 						</ul>
 					</li>
@@ -402,16 +526,16 @@
 
 						<ul class="footer__list">
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Destinations</a>
+								<a class="footer__link link" href="#home">Destinations</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Supports</a>
+								<a class="footer__link link" href="#home">Supports</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Terms & Conditions</a>
+								<a class="footer__link link" href="#home">Terms & Conditions</a>
 							</li>
 							<li class="footer__item">
-								<a class="footer__link" href="#home">Privacy</a>
+								<a class="footer__link link" href="#home">Privacy</a>
 							</li>
 						</ul>
 					</li>
