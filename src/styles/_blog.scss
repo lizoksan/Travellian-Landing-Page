@@ -1,0 +1,37 @@
+.blog {
+	padding: 8rem 0;
+
+	&__picture {
+		margin-bottom: 3.2rem;
+	}
+
+	&__subtitle {
+		margin-bottom: 2.4rem;
+		font-family: $font-title;
+		font-size: 4rem;
+		color: $accent-dark-color;
+	}
+
+	&__text {
+		margin-bottom: 2.4rem;
+		font-size: 1.8rem;
+		line-height: 2;
+		color: $accent-dark-color;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		font-size: 2.4rem;
+		line-height: 2;
+		color: $accent-color;
+	}
+
+	&__icon {
+		transition: transform 0.3s ease;
+		.blog__link:hover & {
+			transform: translateX(1rem);
+		}
+	}
+}

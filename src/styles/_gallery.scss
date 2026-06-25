@@ -1,0 +1,26 @@
+.gallery {
+	padding: 8rem 0;
+
+	&__swiper {
+		margin-bottom: 10rem;
+	}
+
+	&__swiper {
+		@include mq('desktop', max) {
+			overflow: visible !important;
+		}
+	}
+
+	&__wrapper {
+		@include mq('desktop', max) {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			transform: none !important;
+			gap: 4rem;
+		}
+
+		@include mq('desktop') {
+		}
+	}
+}

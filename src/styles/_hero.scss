@@ -43,21 +43,48 @@
 		border: none;
 		border-bottom: 0.1rem solid $black-color;
 		font-family: $font-title;
+
+		&--data,
+		&--person {
+			position: relative;
+			padding-right: 4rem;
+			background-image: url(../assets/img/chevron-down.svg);
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-size: 2.4rem 2.4rem;
+			cursor: pointer;
+		}
+
+		&--data {
+			&::-webkit-calendar-picker-indicator {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 2.4rem;
+				height: 2.4rem;
+				margin: auto;
+				opacity: 0;
+				z-index: 2;
+			}
+		}
+
+		&--person {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
 	}
 
 	&__submit {
 		position: absolute;
 		display: flex;
 		align-items: center;
-		cursor: pointer;
 		bottom: 0;
 		left: 0;
 		width: 100%;
 		gap: 5.7rem;
-
 		padding: 4rem 2rem;
-
-		border: none;
 		border-radius: 0 0 1.6rem 1.6rem;
 		background-color: $accent-color;
 		color: $white-color;
