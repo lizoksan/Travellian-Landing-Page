@@ -1,8 +1,9 @@
 import '../styles/main.scss';
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Grid } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/grid';
 
 window.addEventListener('load', () => {
 	const baseSwiperConfig = {
@@ -58,6 +59,30 @@ window.addEventListener('load', () => {
 				enabled: true,
 				slidesPerView: 2.7,
 				spaceBetween: 32,
+			},
+		},
+	});
+
+	const swiperGallery = new Swiper('.gallery__swiper', {
+		modules: [Navigation, Grid],
+		slidesPerView: 1,
+		grid: {
+			rows: 4,
+		},
+		spaceBetween: 32,
+
+		navigation: {
+			nextEl: '.gallery__next',
+			prevEl: '.gallery__prev',
+		},
+
+		breakpoints: {
+			1440: {
+				slidesPerView: 4,
+				spaceBetween: 32,
+				grid: {
+					rows: 1,
+				},
 			},
 		},
 	});

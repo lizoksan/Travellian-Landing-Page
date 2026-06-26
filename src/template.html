@@ -33,24 +33,24 @@
 							<a class="nav__link link" href="#home"><p class="nav__text">Home</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link" href="#home"><p class="nav__text">Explore</p></a>
+							<a class="nav__link link" href="#dest"><p class="nav__text">Explore</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link" href="#home"><p class="nav__text">Travel</p></a>
+							<a class="nav__link link" href="#planners"><p class="nav__text">Travel</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link" href="#home"><p class="nav__text">Blog</p></a>
+							<a class="nav__link link" href="#blog"><p class="nav__text">Blog</p></a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link link" href="#home"><p class="nav__text">Pricing</p></a>
+							<a class="nav__link link" href="#offers"><p class="nav__text">Pricing</p></a>
 						</li>
 					</ul>
 					<ul class="header__authentication">
 						<li class="header__action">
-							<button class="header__btn header__btn--ligin btn" type="button">Login</button>
+							<button class="header__btn_login btn" type="button">Login</button>
 						</li>
 						<li class="header__action">
-							<button class="header__btn header__btn--signup btn" type="button">Sign up</button>
+							<button class="header__btn_signup btn" type="button">Sign up</button>
 						</li>
 					</ul>
 				</div>
@@ -60,7 +60,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title title">Start your unforgettable journey with us.</h1>
-					<h3 class="hero__subtitle">The best travel for your jouney begins now</h3>
+					<h2 class="hero__subtitle">The best travel for your jouney begins now</h2>
 					<form class="form">
 						<div class="form__wrapper">
 							<label class="form__label" for="destination"> Destination</label>
@@ -93,7 +93,7 @@
 					</form>
 				</div>
 			</section>
-			<section class="destinations">
+			<section class="destinations" id="dest">
 				<div class="container">
 					<h2 class="title">Popular <span class="title__border">Destinations</span></h2>
 					<h3 class="description">
@@ -252,7 +252,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="offers">
+			<section class="offers" id="offers">
 				<div class="container">
 					<h2 class="title"><span class="title__border">Special Offer</span></h2>
 					<h3 class="offers__description description">Check out our special offer and discounts</h3>
@@ -462,7 +462,7 @@
 					</a>
 				</div>
 			</section>
-			<section class="planners">
+			<section class="planners" id="planners">
 				<div class="container">
 					<h2 class="title"><span class="title__border">Trip Planners</span></h2>
 					<h3 class="planners__description description">
@@ -472,6 +472,56 @@
 					<button class="planners__btn btn" type="button">View all trip plans</button>
 					<div class="planners__swiper">
 						<div class="planners__wrapper swiper-wrapper">
+							<div class="planners__slide swiper-slide">
+								<a class="tour link" href="./template.html"
+									><picture class="tour__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+									<div class="tour__info">
+										<div class="tour__price">
+											<p class="tour__type">Guided Tour</p>
+											<p class="tour__cost">€99/Day</p>
+										</div>
+										<p class="tour__name">Rome City Tour</p>
+										<div class="tour__rating">
+											<ul class="stars">
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+											</ul>
+											<p>7 Days tour</p>
+										</div>
+									</div></a
+								>
+							</div>
 							<div class="planners__slide swiper-slide">
 								<a class="tour link" href="./template.html"
 									><picture class="tour__picture picture">
@@ -634,57 +684,73 @@
 						<div class="gallery__swiper">
 							<div class="gallery__wrapper swiper-wrapper">
 								<div class="gallery__slide swiper-slide">
-									<div class="gallery__box">
-										<picture class="gallery__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-											<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-										</picture>
-									</div>
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
-									<div class="gallery__box">
-										<picture class="gallery__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-											<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-										</picture>
-									</div>
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
-									<div class="gallery__box">
-										<picture class="gallery__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-											<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-										</picture>
-									</div>
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
 								</div>
 							</div>
 						</div>
 
 						<ul class="swich">
 							<li class="swich__item">
-								<button class="swich__btn btn">
+								<button class="swich__btn btn gallery__prev">
 									<svg class="swich__icon" width="60" height="66">
 										<use href="./assets/img/symbol-defs.svg#Slide-left"></use>
 									</svg>
 								</button>
 							</li>
 							<li class="swich__item">
-								<button class="swich__btn btn swich__btn--right">
+								<button class="swich__btn btn swich__btn--right gallery__next">
 									<svg class="swich__icon" width="60" height="66">
 										<use href="./assets/img/symbol-defs.svg#Slide-right"></use>
 									</svg>
@@ -696,7 +762,7 @@
 			</section>
 			<section class="reviews">
 				<div class="container">
-					<h2 class="title">Traveler’s <span class="title__border">Experiences</span></h2>
+					<h2 class="reviews__title title">Traveler’s <span class="title__border">Experiences</span></h2>
 					<h3 class="description">Here some awesome feedback from our travelers</h3>
 
 					<div class="reviews__content">
@@ -767,10 +833,7 @@
 											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
 											pain was born and I will give you a complete account of the system and expound the
 											actual teachings of the great explorer of the truth, the master- builder of human
-											happiness. But I must explain to you how all this mistaken idea of denouncing pleasure
-											and praising pain was born and I will give you a complete account of the system and
-											expound the actual teachings of the great explorer of the truth, the master- builder of
-											human happiness.
+											happiness.
 										</p>
 										<ul class="stars">
 											<li class="stars__item">
@@ -852,7 +915,7 @@
 					<li class="footer__column">
 						<div class="footer__brand">
 							<a class="logo" href="#home">
-								<svg class="logo__icon" width="240" height="45.5">
+								<svg class="logo__icon" width="235" height="45.5">
 									<use href="./assets/img/symbol-defs.svg#Logo1"></use>
 								</svg>
 							</a>
@@ -909,32 +972,32 @@
 					</li>
 
 					<li class="footer__column">
-						<p class="footer__title">Follow us on</p>
+						<p class="footer__title footer__title--social">Follow us on</p>
 						<ul class="footer__socials">
 							<li class="footer__social">
-								<a class="footer__social_link" href="./index.html">
-									<svg class="footer__icon icon" width="40" height="40">
+								<a class="footer__social_link link" href="./index.html">
+									<svg class="footer__icon icon" width="32" height="32">
 										<use href="./assets/img/symbol-defs.svg#facebook"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="footer__social">
-								<a class="footer__social_link" href="./index.html">
-									<svg class="footer__icon icon" width="40" height="40">
+								<a class="footer__social_link link" href="./index.html">
+									<svg class="footer__icon icon" width="32" height="32">
 										<use href="./assets/img/symbol-defs.svg#pinterest"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="footer__social">
-								<a class="footer__social_link" href="./index.html">
-									<svg class="footer__icon icon" width="40" height="40">
+								<a class="footer__social_link link" href="./index.html">
+									<svg class="footer__icon icon" width="32" height="32">
 										<use href="./assets/img/symbol-defs.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="footer__social">
-								<a class="footer__social_link" href="./index.html">
-									<svg class="footer__icon icon" width="40" height="40">
+								<a class="footer__social_link link" href="./index.html">
+									<svg class="footer__icon icon" width="32" height="32">
 										<use href="./assets/img/symbol-defs.svg#twitter"></use>
 									</svg>
 								</a>

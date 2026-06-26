@@ -1,26 +1,70 @@
 .header {
 	position: fixed;
-	padding: 2.4rem 0;
 	width: 100%;
 
 	color: $white-color;
-}
 
-.header__container {
-	padding: 0 3.2rem;
-}
+	@include mq('desktop', max) {
+		padding: 2.3rem 0 2.4rem;
+	}
 
-.header__content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 6rem;
-}
+	@include mq('desktop') {
+		padding: 4.1rem 0 2.4rem;
+	}
 
-.header__burger {
-	color: $white-color;
-	background-color: transparent;
-	border: none;
+	&__container {
+		@include mq('desktop', max) {
+			padding: 0 3.2rem;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 6rem;
+	}
+
+	&__burger {
+		padding: 0;
+		color: $white-color;
+		background-color: transparent;
+
+		&:hover {
+			color: $accent-color;
+		}
+
+		@include mq('desktop') {
+			display: none;
+		}
+	}
+
+	&__authentication {
+		@include mq('desktop', max) {
+			display: none;
+		}
+
+		@include mq('desktop') {
+			display: flex;
+			gap: 1rem;
+		}
+	}
+
+	&__btn_login {
+		padding: 2rem 2rem;
+		background-color: transparent;
+		color: $white-color;
+		border: 1px solid red;
+		font-size: 2rem;
+	}
+
+	&__btn_signup {
+		padding: 2rem 3.2rem;
+		background-color: $accent-color;
+		color: $white-color;
+		font-size: 2rem;
+		border-radius: 1.2rem;
+	}
 }
 
 .nav {
@@ -30,15 +74,15 @@
 
 	@include mq('desktop') {
 		display: flex;
-	}
-}
-
-.header__authentication {
-	@include mq('desktop', max) {
-		display: none;
+		gap: 3.2rem;
+		font-size: 2rem;
 	}
 
-	@include mq('desktop') {
-		display: flex;
+	&__link {
+		color: $white-color;
+
+		&:hover {
+			color: $accent-color;
+		}
 	}
 }

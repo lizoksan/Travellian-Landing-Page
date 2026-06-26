@@ -1,26 +1,16 @@
 .gallery {
 	padding: 8rem 0;
 
-	&__swiper {
-		margin-bottom: 10rem;
+	&__content {
 	}
-
-	&__swiper {
-		@include mq('desktop', max) {
-			overflow: visible !important;
-		}
-	}
-
 	&__wrapper {
-		@include mq('desktop', max) {
-			display: flex;
-			flex-direction: column;
-			flex-wrap: wrap;
-			transform: none !important;
-			gap: 4rem;
-		}
+	}
+	&__swiper {
+		height: 137.6rem;
+		margin-bottom: 9.6rem;
+	}
 
-		@include mq('desktop') {
-		}
+	&__slide {
+		height: calc((100% - 9.6rem) / 4) !important;
 	}
 }

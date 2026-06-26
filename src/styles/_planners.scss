@@ -1,13 +1,14 @@
 .planners {
-	padding: 8rem 0;
+	padding: 8.2rem 0;
 
 	&__description {
-		margin-bottom: 3.2rem;
+		margin-bottom: 4.3rem;
 	}
 
 	&__btn {
 		position: relative;
-		margin-bottom: 9.6rem;
+		margin: 0 0 9.6rem 1.4rem;
+
 		padding: 2rem;
 		border-radius: 1.2rem;
 		color: $white-color;
@@ -29,14 +30,14 @@
 		}
 
 		&::before {
-			top: -2rem;
-			left: -2rem;
+			top: -1.5rem;
+			left: -1.4rem;
 			background-color: $black-color;
 		}
 
 		&::after {
-			bottom: -2rem;
-			right: -2rem;
+			bottom: -1.5rem;
+			right: -1.8rem;
 			background-color: $gray-color;
 		}
 	}
@@ -67,8 +68,8 @@
 	&__info {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem 0;
-		gap: 1.2rem;
+		padding: 2.1rem 0 1.8rem;
+		gap: 1.7rem;
 	}
 
 	&__price {
@@ -83,6 +84,7 @@
 	&__name {
 		font-family: $font-title;
 		font-size: 2.8rem;
+		font-weight: 600;
 	}
 
 	&__rating {

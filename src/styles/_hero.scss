@@ -1,35 +1,68 @@
 .hero {
-	padding: 19.8rem 0;
-	background-image: url(../assets/img/hero-mob.jpg);
+	padding: 19.9rem 0 10rem;
+
 	background-size: cover;
 	color: $white-color;
 
+	@include mq('desktop', max) {
+		background-image: url(../assets/img/hero-mob.jpg);
+	}
+
+	@include mq('desktop') {
+		background-image: url(../assets/img/hero-desk.jpg);
+	}
+
 	&__title {
-		margin-bottom: 1.6rem;
+		margin-bottom: 1.7rem;
 		color: $white-color;
-		border: none;
+
+		@include mq('desktop') {
+			margin-bottom: 1.6rem;
+			max-width: 94rem;
+			font-size: 8.4rem;
+		}
 	}
 
 	&__subtitle {
-		margin-bottom: 10rem;
-		font-size: 1.8rem;
+		line-height: 1.12;
+
+		@include mq('desktop', max) {
+			margin-bottom: 10rem;
+			font-size: 1.8rem;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 17rem;
+			font-size: 2.4rem;
+		}
 	}
 }
 
 .form {
 	position: relative;
 	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-	padding: 2rem 2rem 20rem;
-	border-radius: 1.6rem;
+
 	background-color: $white-color;
 	font-size: 1.4rem;
+
+	@include mq('desktop', max) {
+		flex-direction: column;
+		gap: 4.2rem;
+		padding: 2.2rem 2rem 20.8rem;
+		border-radius: 1.6rem;
+	}
+
+	@include mq('desktop') {
+		width: 120rem;
+		gap: 4.2rem;
+		padding: 7.55rem 31rem 7.55rem 3.2rem;
+		border-radius: 0 1.6rem 1.6rem 0;
+	}
 
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
-		gap: 1.2rem;
+		gap: 1rem;
 	}
 
 	&__label {
@@ -38,7 +71,7 @@
 	}
 
 	&__input {
-		padding: 0.5rem 0;
+		padding: 0.5rem 0 1rem;
 		color: $accent-dark-color;
 		border: none;
 		border-bottom: 0.1rem solid $black-color;
@@ -47,7 +80,6 @@
 		&--data,
 		&--person {
 			position: relative;
-			padding-right: 4rem;
 			background-image: url(../assets/img/chevron-down.svg);
 			background-repeat: no-repeat;
 			background-position: right center;
@@ -56,6 +88,7 @@
 		}
 
 		&--data {
+			padding: 0.5rem 4rem 1.3rem 0;
 			&::-webkit-calendar-picker-indicator {
 				position: absolute;
 				top: 0;
@@ -63,6 +96,7 @@
 				bottom: 0;
 				width: 2.4rem;
 				height: 2.4rem;
+
 				margin: auto;
 				opacity: 0;
 				z-index: 2;
@@ -70,6 +104,7 @@
 		}
 
 		&--person {
+			padding: 0.5rem 4rem 1.5rem 0;
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
@@ -81,11 +116,7 @@
 		display: flex;
 		align-items: center;
 		bottom: 0;
-		left: 0;
-		width: 100%;
-		gap: 5.7rem;
-		padding: 4rem 2rem;
-		border-radius: 0 0 1.6rem 1.6rem;
+
 		background-color: $accent-color;
 		color: $white-color;
 		font-size: 3.6rem;
@@ -93,6 +124,22 @@
 
 		&:hover {
 			color: $accent-dark-color;
+		}
+
+		@include mq('desktop', max) {
+			left: 0;
+			width: 100%;
+			gap: 6.6rem;
+			padding: 4.4rem 1.9rem 4.3rem 2rem;
+			border-radius: 0 0 1.6rem 1.6rem;
+		}
+
+		@include mq('desktop') {
+			right: 0;
+			top: 0;
+			gap: 2rem;
+			padding: 6rem 2rem;
+			border-radius: 0 1.6rem 1.6rem 0;
 		}
 	}
 }
