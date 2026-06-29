@@ -1,13 +1,26 @@
 .footer {
-	padding: 8rem 0;
 	background-color: $accent-dark-color;
 	color: $white-color;
+
+	@include mq('desktop', max) {
+		padding: 8rem 0;
+	}
+
+	@include mq('desktop') {
+		padding: 24rem 0 14rem;
+	}
 
 	&__brand {
 		display: flex;
 		flex-direction: column;
 
-		gap: 1.4rem;
+		@include mq('desktop', max) {
+			gap: 1.4rem;
+		}
+
+		@include mq('desktop') {
+			gap: 0.8rem;
+		}
 	}
 
 	&__copyright {
@@ -17,8 +30,16 @@
 
 	&__columns {
 		display: flex;
-		flex-direction: column;
+
 		gap: 6rem;
+
+		@include mq('desktop', max) {
+			flex-direction: column;
+		}
+
+		@include mq('desktop') {
+			justify-content: space-between;
+		}
 	}
 
 	&__title {

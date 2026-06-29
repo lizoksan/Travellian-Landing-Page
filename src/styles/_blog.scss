@@ -4,7 +4,7 @@
 	}
 
 	@include mq('desktop') {
-		padding: 9.4rem 0;
+		padding: 9.4rem 0 14rem;
 	}
 
 	&__info {
@@ -32,7 +32,7 @@
 
 	&__content {
 		@include mq('desktop') {
-			padding: 2rem 0;
+			padding: 4.4rem 0;
 		}
 	}
 
@@ -51,14 +51,24 @@
 			max-width: 40rem;
 			margin-bottom: 2.4rem;
 			font-size: 5.6rem;
+			letter-spacing: -1.6%;
 		}
 	}
 
 	&__text {
-		margin-bottom: 2.4rem;
-		font-size: 1.8rem;
-		line-height: 2.35;
 		color: $accent-dark-color;
+
+		@include mq('desktop', max) {
+			margin-bottom: 2.4rem;
+			font-size: 1.8rem;
+			line-height: 2.35;
+		}
+
+		@include mq('desktop') {
+			margin-bottom: 2.42rem;
+			font-size: 2.4rem;
+			line-height: 2.17;
+		}
 	}
 
 	&__link {

@@ -4,8 +4,29 @@ import { Navigation, Grid } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/grid';
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
 
 window.addEventListener('load', () => {
+	const checkinInput = document.getElementById('checkin');
+	const checkoutInput = document.getElementById('checkout');
+
+	if (checkinInput) {
+		flatpickr(checkinInput, {
+			altInput: true,
+			altFormat: 'D, j M Y',
+			dateFormat: 'Y-m-d',
+		});
+	}
+
+	if (checkoutInput) {
+		flatpickr(checkoutInput, {
+			altInput: true,
+			altFormat: 'D, j M Y',
+			dateFormat: 'Y-m-d',
+		});
+	}
+
 	const baseSwiperConfig = {
 		modules: [Navigation],
 		direction: 'horizontal',
@@ -55,6 +76,13 @@ window.addEventListener('load', () => {
 			nextEl: '.reviews__next',
 			prevEl: '.reviews__prev',
 		},
+
+		breakpoints: {
+			1440: {
+				slidesPerView: 2.372,
+				spaceBetween: 32,
+			},
+		},
 	});
 
 	const swiperPlanners = new Swiper('.planners__swiper', {
@@ -64,7 +92,7 @@ window.addEventListener('load', () => {
 		breakpoints: {
 			1440: {
 				enabled: true,
-				slidesPerView: 2.7,
+				slidesPerView: 2.82,
 				spaceBetween: 32,
 			},
 		},
@@ -85,6 +113,8 @@ window.addEventListener('load', () => {
 
 		breakpoints: {
 			1440: {
+				direction: 'horizontal',
+				loop: true,
 				slidesPerView: 4,
 				spaceBetween: 32,
 				grid: {

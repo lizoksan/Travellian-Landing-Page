@@ -51,7 +51,7 @@
 	}
 
 	&__btn_login {
-		padding: 2rem 2rem;
+		padding: 2rem 2.5rem;
 		background-color: transparent;
 		color: $white-color;
 		font-size: 2rem;
@@ -73,7 +73,7 @@
 
 	@include mq('desktop') {
 		display: flex;
-		gap: 3.2rem;
+		gap: 3rem;
 		font-size: 2rem;
 	}
 
@@ -82,6 +82,21 @@
 
 		&:hover {
 			color: $accent-color;
+		}
+
+		&.active {
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				display: block;
+				height: 0.3rem;
+				width: 100%;
+				bottom: -0.4rem;
+				left: 0;
+				background-color: $accent-color;
+			}
 		}
 	}
 }

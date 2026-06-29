@@ -30,7 +30,7 @@
 					</button>
 					<ul class="nav">
 						<li class="nav__item">
-							<a class="nav__link link" href="#home"><p class="nav__text">Home</p></a>
+							<a class="nav__link link active" href="#home"><p class="nav__text">Home</p></a>
 						</li>
 						<li class="nav__item">
 							<a class="nav__link link" href="#dest"><p class="nav__text">Explore</p></a>
@@ -76,11 +76,11 @@
 						</div>
 						<div class="form__wrapper">
 							<label class="form__label" for="checkin">Check in</label>
-							<input class="form__input form__input--data" type="date" name="date" id="checkin" />
+							<input class="form__input form__input--data" type="text" name="checkin" id="checkin" />
 						</div>
 						<div class="form__wrapper">
 							<label class="form__label" for="checkout">Check out</label>
-							<input class="form__input form__input--data" type="date" name="date" id="checkout" />
+							<input class="form__input form__input--data" type="text" name="checkout" id="checkout" />
 						</div>
 
 						<button class="form__submit btn" type="submit">
@@ -258,9 +258,84 @@
 									<div class="card">
 										<picture class="card__picture picture">
 											<source
-												srcset="./assets/img/offers-mob1.jpg"
+												srcset="./assets/img/offers-desk1.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
+											/>
+
+											<source
+												srcset="./assets/img/offers-desk1.jpg"
+												type="image/jpeg"
+												media="(min-width: 768px)"
+											/>
+
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(max-width: 767px)"
+											/>
+											<img
+												class="offers__img img"
+												src="./assets/img/offers-mob1.jpg"
+												alt="Monument of Berlin"
+											/>
+										</picture>
+										<div class="card__info">
+											<p class="card__title">Lisbon, Portugal</p>
+											<ul class="card__stars stars">
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+											</ul>
+											<p class="card__text">
+												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+												the renaissance. Passage and going through the cites of the world in classical
+												literature.
+											</p>
+											<div class="card__action">
+												<div class="card__payment">
+													<p class="card__payment_text">From</p>
+													<p class="card__price">€500</p>
+												</div>
+												<a class="card__link link" href="./template.html">Details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="offers__slide swiper-slide">
+									<div class="card">
+										<picture class="card__picture picture">
+											<source
+												srcset="./assets/img/offers-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
+											<source
+												srcset="./assets/img/offers-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 768px)"
 											/>
 											<source
 												srcset="./assets/img/offers-mob1.jpg"
@@ -321,72 +396,14 @@
 									<div class="card">
 										<picture class="card__picture picture">
 											<source
-												srcset="./assets/img/offers-mob1.jpg"
+												srcset="./assets/img/offers-desk3.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
 											<source
-												srcset="./assets/img/offers-mob1.jpg"
+												srcset="./assets/img/offers-desk3.jpg"
 												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
-											<img
-												class="offers__img img"
-												src="./assets/img/offers-mob1.jpg"
-												alt="Monument of Berlin"
-											/>
-										</picture>
-										<div class="card__info">
-											<p class="card__title">Lisbon, Portugal</p>
-											<ul class="card__stars stars">
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-											</ul>
-											<p class="card__text">
-												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
-												the renaissance. Passage and going through the cites of the world in classical
-												literature.
-											</p>
-											<div class="card__action">
-												<div class="card__payment">
-													<p class="card__payment_text">From</p>
-													<p class="card__price">€500</p>
-												</div>
-												<a class="card__link link" href="./template.html">Details</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="offers__slide swiper-slide">
-									<div class="card">
-										<picture class="card__picture picture">
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(min-width: 1440px)"
+												media="(min-width: 768px)"
 											/>
 
 											<source
@@ -450,9 +467,15 @@
 									<div class="card">
 										<picture class="card__picture picture">
 											<source
-												srcset="./assets/img/offers-mob1.jpg"
+												srcset="./assets/img/offers-desk2.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
+											/>
+
+											<source
+												srcset="./assets/img/offers-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 768px)"
 											/>
 
 											<source
@@ -570,213 +593,250 @@
 			</section>
 			<section class="planners" id="planners">
 				<div class="container">
-					<h2 class="title"><span class="title__border">Trip Planners</span></h2>
-					<h3 class="planners__description description">
-						20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting
-						and start travelling, start throwing off the bowlines.
-					</h3>
-					<button class="planners__btn btn" type="button">View all trip plans</button>
-					<div class="planners__swiper">
-						<div class="planners__wrapper swiper-wrapper">
-							<div class="planners__slide swiper-slide">
-								<a class="tour link" href="./template.html"
-									><picture class="tour__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+					<div class="planners__box">
+						<div class="planners__content">
+							<h2 class="title"><span class="title__border">Trip Planners</span></h2>
+							<h3 class="planners__description description">
+								20 years from now you will be more disappointed by the things that you didn’t do. Stop
+								regretting and start travelling, start throwing off the bowlines.
+							</h3>
+							<button class="planners__btn btn" type="button">View all trip plans</button>
+						</div>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+						<div class="planners__swiper">
+							<div class="planners__wrapper swiper-wrapper">
+								<div class="planners__slide swiper-slide">
+									<a class="tour link" href="./template.html"
+										><picture class="tour__picture picture">
+											<source
+												srcset="./assets/img/tour-desk1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source
+												srcset="./assets/img/tour-desk1.jpg"
+												type="image/jpeg"
+												media="(min-width: 768px)"
+											/>
 
-										<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-									<div class="tour__info">
-										<div class="tour__price">
-											<p class="tour__type">Guided Tour</p>
-											<p class="tour__cost">€99/Day</p>
-										</div>
-										<p class="tour__name">Rome City Tour</p>
-										<div class="tour__rating">
-											<ul class="stars">
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-											</ul>
-											<p>7 Days tour</p>
-										</div>
-									</div></a
-								>
-							</div>
-							<div class="planners__slide swiper-slide">
-								<a class="tour link" href="./template.html"
-									><picture class="tour__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<div class="tour__info">
+											<div class="tour__price">
+												<p class="tour__type">Guided Tour</p>
+												<p class="tour__cost">€99/Day</p>
+											</div>
+											<p class="tour__name">Rome City Tour</p>
+											<div class="tour__rating">
+												<ul class="stars">
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+												</ul>
+												<p>7 Days tour</p>
+											</div>
+										</div></a
+									>
+								</div>
+								<div class="planners__slide swiper-slide">
+									<a class="tour link" href="./template.html"
+										><picture class="tour__picture picture">
+											<source
+												srcset="./assets/img/tour-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source
+												srcset="./assets/img/tour-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 1439px)"
+											/>
 
-										<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-									<div class="tour__info">
-										<div class="tour__price">
-											<p class="tour__type">Guided Tour</p>
-											<p class="tour__cost">€99/Day</p>
-										</div>
-										<p class="tour__name">Rome City Tour</p>
-										<div class="tour__rating">
-											<ul class="stars">
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-											</ul>
-											<p>7 Days tour</p>
-										</div>
-									</div></a
-								>
-							</div>
-							<div class="planners__slide swiper-slide">
-								<a class="tour link" href="./template.html"
-									><picture class="tour__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<div class="tour__info">
+											<div class="tour__price">
+												<p class="tour__type">Guided Tour</p>
+												<p class="tour__cost">€95/Day</p>
+											</div>
+											<p class="tour__name">Paris City Tour</p>
+											<div class="tour__rating">
+												<ul class="stars">
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+												</ul>
+												<p>7 Days tour</p>
+											</div>
+										</div></a
+									>
+								</div>
+								<div class="planners__slide swiper-slide">
+									<a class="tour link" href="./template.html"
+										><picture class="tour__picture picture">
+											<source
+												srcset="./assets/img/tour-desk3.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source
+												srcset="./assets/img/tour-desk3.jpg"
+												type="image/jpeg"
+												media="(min-width: 1439px)"
+											/>
 
-										<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-									<div class="tour__info">
-										<div class="tour__price">
-											<p class="tour__type">Guided Tour</p>
-											<p class="tour__cost">€99/Day</p>
-										</div>
-										<p class="tour__name">Rome City Tour</p>
-										<div class="tour__rating">
-											<ul class="stars">
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-											</ul>
-											<p>7 Days tour</p>
-										</div>
-									</div></a
-								>
-							</div>
-							<div class="planners__slide swiper-slide">
-								<a class="tour link" href="./template.html"
-									><picture class="tour__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<div class="tour__info">
+											<div class="tour__price">
+												<p class="tour__type">Guided Tour</p>
+												<p class="tour__cost">€89/Day</p>
+											</div>
+											<p class="tour__name">Barcelona City Tour</p>
+											<div class="tour__rating">
+												<ul class="stars">
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+												</ul>
+												<p>7 Days tour</p>
+											</div>
+										</div></a
+									>
+								</div>
+								<div class="planners__slide swiper-slide">
+									<a class="tour link" href="./template.html"
+										><picture class="tour__picture picture">
+											<source
+												srcset="./assets/img/tour-desk4.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source
+												srcset="./assets/img/tour-desk4.jpg"
+												type="image/jpeg"
+												media="(min-width: 1439px)"
+											/>
 
-										<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-									<div class="tour__info">
-										<div class="tour__price">
-											<p class="tour__type">Guided Tour</p>
-											<p class="tour__cost">€99/Day</p>
-										</div>
-										<p class="tour__name">Rome City Tour</p>
-										<div class="tour__rating">
-											<ul class="stars">
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-												<li class="stars__item">
-													<svg class="stars__star stars__star--active" width="24" height="24">
-														<use href="./assets/img/symbol-defs.svg#star"></use>
-													</svg>
-												</li>
-											</ul>
-											<p>7 Days tour</p>
-										</div>
-									</div></a
-								>
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<div class="tour__info">
+											<div class="tour__price">
+												<p class="tour__type">Guided Tour</p>
+												<p class="tour__cost">€89/Day</p>
+											</div>
+											<p class="tour__name">Budapest City Tour</p>
+											<div class="tour__rating">
+												<ul class="stars">
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+													<li class="stars__item">
+														<svg class="stars__star stars__star--active" width="24" height="24">
+															<use href="./assets/img/symbol-defs.svg#star"></use>
+														</svg>
+													</li>
+												</ul>
+												<p>7 Days tour</p>
+											</div>
+										</div></a
+									>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -785,26 +845,23 @@
 			<section class="gallery">
 				<div class="container">
 					<h2 class="title">Destination <span class="title__border">Gallery</span></h2>
-					<h3 class="description">Our photo gallery on trip</h3>
+					<h3 class="gallery__description description">Our photo gallery on trip</h3>
 					<div class="gallery__content">
 						<div class="gallery__swiper">
 							<div class="gallery__wrapper swiper-wrapper">
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+										<source
+											srcset="./assets/img/gallery-desk1.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
-
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-								</div>
-								<div class="gallery__slide swiper-slide">
-									<picture class="gallery__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
-
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source
+											srcset="./assets/img/gallery-desk1.jpg"
+											type="image/jpeg"
+											media="(min-width: 768px)"
+										/>
 
 										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
@@ -813,20 +870,17 @@
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+										<source
+											srcset="./assets/img/gallery-desk2.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
-
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-									</picture>
-								</div>
-								<div class="gallery__slide swiper-slide">
-									<picture class="gallery__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
-
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source
+											srcset="./assets/img/gallery-desk2.jpg"
+											type="image/jpeg"
+											media="(min-width: 768px)"
+										/>
 
 										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
@@ -835,9 +889,55 @@
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+										<source
+											srcset="./assets/img/gallery-desk3.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+										<source
+											srcset="./assets/img/gallery-desk3.jpg"
+											type="image/jpeg"
+											media="(min-width: 768px)"
+										/>
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk4.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
+
+										<source
+											srcset="./assets/img/gallery-desk4.jpg"
+											type="image/jpeg"
+											media="(min-width: 768px)"
+										/>
+
+										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk3.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
+
+										<source
+											srcset="./assets/img/gallery-desk3.jpg"
+											type="image/jpeg"
+											media="(min-width: 768px)"
+										/>
 
 										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
@@ -847,7 +947,7 @@
 							</div>
 						</div>
 
-						<ul class="swich">
+						<ul class="gallery__swich swich">
 							<li class="swich__item">
 								<button class="swich__btn btn gallery__prev">
 									<svg class="swich__icon" width="60" height="66">
@@ -869,7 +969,7 @@
 			<section class="reviews">
 				<div class="container">
 					<h2 class="reviews__title title">Traveler’s <span class="title__border">Experiences</span></h2>
-					<h3 class="description">Here some awesome feedback from our travelers</h3>
+					<h3 class="reviews__description description">Here some awesome feedback from our travelers</h3>
 
 					<div class="reviews__content">
 						<div class="reviews__swiper">
@@ -879,7 +979,57 @@
 										<picture class="review__picture picture">
 											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 768px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+
+											<img class="review__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										</picture>
+										<p class="review__text">
+											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+											pain was born and I will give you a complete account of the system and expound the
+											actual teachings of the great explorer of the truth, the master- builder of human
+											happiness.
+										</p>
+										<ul class="stars">
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+											<li class="stars__item">
+												<svg class="stars__star stars__star--active" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#star"></use>
+												</svg>
+											</li>
+										</ul>
+										<div class="review__name">
+											<p class="review__title">John Doe</p>
+											<p class="review__subtitle">Accountant</p>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="review">
+										<picture class="review__picture picture">
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+
+											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 768px)" />
 
 											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
@@ -977,7 +1127,7 @@
 							</div>
 						</div>
 
-						<ul class="swich">
+						<ul class="reviews__swich swich">
 							<li class="swich__item">
 								<button class="swich__btn btn reviews__prev">
 									<svg class="swich__icon" width="60" height="66">
@@ -997,18 +1147,19 @@
 				</div>
 			</section>
 			<section class="subscribe">
-				<div class="container">
+				<div class="subscribe__container container">
 					<form class="subscribe__form">
 						<h2 class="subscribe__title title">Our Newsletter</h2>
 						<div class="subscribe__wrapper">
-							<label class="subscribe__label" for="mail">Email</label>
-							<input
-								class="subscribe__input"
-								type="email"
-								name="mail"
-								id="mail"
-								placeholder="Enter your email"
-							/>
+							<label class="subscribe__label" for="mail"
+								>Email<input
+									class="subscribe__input"
+									type="email"
+									name="mail"
+									id="mail"
+									placeholder="Enter your email"
+							/></label>
+
 							<button class="subscribe__btn btn" type="submit">Subscribe</button>
 						</div>
 					</form>

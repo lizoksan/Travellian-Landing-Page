@@ -1,16 +1,56 @@
 .gallery {
-	padding: 8rem 0;
+	@include mq('desktop', max) {
+		padding: 8rem 0;
+	}
+
+	@include mq('desktop') {
+		padding: 12rem 0;
+	}
+
+	&__description {
+		@include mq('desktop') {
+			margin-bottom: 13.6rem;
+		}
+	}
 
 	&__content {
+		@include mq('desktop') {
+			position: relative;
+		}
 	}
-	&__wrapper {
-	}
+
 	&__swiper {
-		height: 137.6rem;
-		margin-bottom: 9.6rem;
+		@include mq('desktop', max) {
+			height: 137.6rem;
+			margin-bottom: 9.6rem;
+		}
 	}
 
 	&__slide {
-		height: calc((100% - 9.6rem) / 4) !important;
+		@include mq('desktop', max) {
+			height: calc((100% - 9.6rem) / 4) !important;
+		}
+	}
+
+	&__img {
+		@include mq('desktop') {
+			width: 32rem;
+			height: 47rem;
+		}
+	}
+
+	&__swich {
+		top: -20rem;
+		right: 0;
+	}
+
+	&__picture {
+		@include mq('desktop') {
+			transition: transform 0.2s ease;
+
+			.gallery__slide.swiper-slide-next & {
+				transform: translateY(-3.8rem);
+			}
+		}
 	}
 }
