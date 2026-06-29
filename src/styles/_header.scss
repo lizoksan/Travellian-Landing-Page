@@ -9,7 +9,7 @@
 	}
 
 	@include mq('desktop') {
-		padding: 4.1rem 0 2.4rem;
+		padding: 3.3rem 0 2.4rem;
 	}
 
 	&__container {
@@ -54,7 +54,6 @@
 		padding: 2rem 2rem;
 		background-color: transparent;
 		color: $white-color;
-		border: 1px solid red;
 		font-size: 2rem;
 	}
 

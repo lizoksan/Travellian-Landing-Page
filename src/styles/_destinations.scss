@@ -1,8 +1,21 @@
 .destinations {
-	padding: 8rem 0;
+	@include mq('desktop', max) {
+		padding: 8rem 0;
+	}
+
+	@include mq('desktop') {
+		padding: 14rem 0;
+	}
+
+	&__content {
+		@include mq('desktop') {
+			position: relative;
+		}
+	}
 
 	&__swiper {
 		margin-bottom: 9.7rem;
+		order: 2;
 	}
 
 	&__box {
@@ -11,20 +24,37 @@
 	}
 
 	&__img {
-		border-radius: 1.6rem;
+		border-radius: 2.8rem;
+		object-fit: cover;
 	}
 
 	&__info {
 		position: absolute;
-		bottom: 4rem;
-		left: 2rem;
+
 		letter-spacing: 0.5%;
+
+		@include mq('desktop', max) {
+			bottom: 4rem;
+			left: 2rem;
+		}
+
+		@include mq('desktop') {
+			bottom: 4.3rem;
+			left: 2.5rem;
+		}
 	}
 
 	&__title {
 		margin-bottom: 2.2rem;
 		font-family: $font-title;
-		font-size: 2.4rem;
+
+		@include mq('desktop', max) {
+			font-size: 2.4rem;
+		}
+
+		@include mq('desktop') {
+			font-size: 2.8rem;
+		}
 	}
 
 	&__location {
@@ -34,7 +64,21 @@
 	}
 
 	&__text {
-		font-size: 1.8rem;
 		font-weight: 300;
+
+		@include mq('desktop', max) {
+			font-size: 1.8rem;
+		}
+
+		@include mq('desktop') {
+			font-size: 2.4rem;
+		}
+	}
+
+	&__swich {
+		@include mq('desktop') {
+			top: -16.3rem;
+			right: 0;
+		}
 	}
 }

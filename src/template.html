@@ -24,7 +24,7 @@
 						</svg>
 					</a>
 					<button class="header__burger btn" type="button">
-						<svg class="logo__icon" width="50" height="50">
+						<svg class="header__icon" width="50" height="50">
 							<use href="./assets/img/symbol-defs.svg#hamburger"></use>
 						</svg>
 					</button>
@@ -106,20 +106,15 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
-												type="image/jpeg"
-												media="(min-width: 1440px)"
-											/>
-											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk1.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk1.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 768px)"
 											/>
 
 											<source
@@ -149,15 +144,15 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk2.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk2.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 768px)"
 											/>
 
 											<source
@@ -187,15 +182,15 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk3.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk3.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 768px)"
 											/>
 
 											<source
@@ -233,7 +228,7 @@
 							</div>
 						</div>
 
-						<ul class="swich">
+						<ul class="destinations__swich swich">
 							<li class="swich__item">
 								<button class="swich__btn btn destinations__prev">
 									<svg class="swich__icon" width="60" height="66">
@@ -254,7 +249,7 @@
 			</section>
 			<section class="offers" id="offers">
 				<div class="container">
-					<h2 class="title"><span class="title__border">Special Offer</span></h2>
+					<h2 class="offers__title title"><span class="title__border">Special Offer</span></h2>
 					<h3 class="offers__description description">Check out our special offer and discounts</h3>
 					<div class="offers__content">
 						<div class="offers__swiper">
@@ -267,30 +262,11 @@
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
-
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(min-width: 1439px)"
-											/>
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(min-width: 1440px)"
-											/>
-
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(min-width: 1439px)"
-											/>
-
 											<source
 												srcset="./assets/img/offers-mob1.jpg"
 												type="image/jpeg"
 												media="(max-width: 767px)"
 											/>
-
 											<img
 												class="offers__img img"
 												src="./assets/img/offers-mob1.jpg"
@@ -331,11 +307,76 @@
 												the renaissance. Passage and going through the cites of the world in classical
 												literature.
 											</p>
-											<div class="card__payment">
-												<p class="card__payment_text">From</p>
-												<p class="card__price">€500</p>
+											<div class="card__action">
+												<div class="card__payment">
+													<p class="card__payment_text">From</p>
+													<p class="card__price">€500</p>
+												</div>
+												<a class="card__link link" href="./template.html">Details</a>
 											</div>
-											<a class="card__link link" href="./template.html">Details</a>
+										</div>
+									</div>
+								</div>
+								<div class="offers__slide swiper-slide">
+									<div class="card">
+										<picture class="card__picture picture">
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(max-width: 767px)"
+											/>
+											<img
+												class="offers__img img"
+												src="./assets/img/offers-mob1.jpg"
+												alt="Monument of Berlin"
+											/>
+										</picture>
+										<div class="card__info">
+											<p class="card__title">Lisbon, Portugal</p>
+											<ul class="card__stars stars">
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+											</ul>
+											<p class="card__text">
+												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+												the renaissance. Passage and going through the cites of the world in classical
+												literature.
+											</p>
+											<div class="card__action">
+												<div class="card__payment">
+													<p class="card__payment_text">From</p>
+													<p class="card__price">€500</p>
+												</div>
+												<a class="card__link link" href="./template.html">Details</a>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -351,7 +392,67 @@
 											<source
 												srcset="./assets/img/offers-mob1.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(max-width: 767px)"
+											/>
+
+											<img
+												class="offers__img img"
+												src="./assets/img/offers-mob1.jpg"
+												alt="Monument of Berlin"
+											/>
+										</picture>
+										<div class="card__info">
+											<p class="card__title">Lisbon, Portugal</p>
+											<ul class="card__stars stars">
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+												<li class="stars__item">
+													<svg class="stars__star stars__star--active" width="24" height="24">
+														<use href="./assets/img/symbol-defs.svg#star"></use>
+													</svg>
+												</li>
+											</ul>
+											<p class="card__text">
+												5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+												the renaissance. Passage and going through the cites of the world in classical
+												literature.
+											</p>
+
+											<div class="card__action">
+												<div class="card__payment">
+													<p class="card__payment_text">From</p>
+													<p class="card__price">€500</p>
+												</div>
+												<a class="card__link link" href="./template.html">Details</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="offers__slide swiper-slide">
+									<div class="card">
+										<picture class="card__picture picture">
+											<source
+												srcset="./assets/img/offers-mob1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
 											/>
 
 											<source
@@ -400,19 +501,20 @@
 												the renaissance. Passage and going through the cites of the world in classical
 												literature.
 											</p>
-
-											<div class="card__payment">
-												<p class="card__payment_text">From</p>
-												<p class="card__price">€500</p>
+											<div class="card__action">
+												<div class="card__payment">
+													<p class="card__payment_text">From</p>
+													<p class="card__price">€500</p>
+												</div>
+												<a class="card__link link" href="./template.html">Details</a>
 											</div>
-											<a class="card__link link" href="./template.html">Details</a>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<ul class="swich">
+						<ul class="offers__swich swich">
 							<li class="swich__item">
 								<button class="swich__btn btn offers__prev">
 									<svg class="swich__icon" width="60" height="66">
@@ -435,31 +537,35 @@
 				<div class="container">
 					<h2 class="title"><span class="title__border">Our Blog</span></h2>
 					<h3 class="description">An insight the incredible experience in the world</h3>
-					<picture class="blog__picture picture">
-						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+					<div class="blog__info">
+						<picture class="blog__picture picture">
+							<source srcset="./assets/img/blog-desk.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
+							<source srcset="./assets/img/blog-desk.jpg" type="image/jpeg" media="(min-width: 768px)" />
 
-						<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+							<source srcset="./assets/img/blog-mob.jpg" type="image/jpeg" media="(max-width: 767px)" />
 
-						<img class="blog__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
-					</picture>
-					<p class="blog__subtitle">Beautiful Italy Let’s travel</p>
-					<p class="blog__text">
-						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-						born and I will give you a complete account of the system and expound the actual teachings of the
-						great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or
-						avoids plasure itself, because it is pleasure, but because those who do not know how to pursue
-						pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone
-						who loves or pursues.
-					</p>
+							<img class="blog__img img" src="./assets/img/blog-mob.jpg" alt="Monument of Berlin" />
+						</picture>
+						<div class="blog__content">
+							<p class="blog__subtitle">Beautiful Italy Let’s travel</p>
+							<p class="blog__text">
+								But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain
+								was born and I will give you a complete account of the system and expound the actual teachings
+								of the great explorer of the truth, the master- builder of human happiness. No one rejects,
+								dislike, or avoids plasure itself, because it is pleasure, but because those who do not know
+								how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again
+								is there anyone who loves or pursues.
+							</p>
 
-					<a class="blog__link link" href="./template.html"
-						>Read More
-						<svg class="blog__icon" width="27" height="19">
-							<use href="./assets/img/symbol-defs.svg#Arrow-Right"></use>
-						</svg>
-					</a>
+							<a class="blog__link link" href="./template.html"
+								>Read More
+								<svg class="blog__icon" width="27" height="19">
+									<use href="./assets/img/symbol-defs.svg#Arrow-Right"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="planners" id="planners">

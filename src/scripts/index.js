@@ -20,7 +20,7 @@ window.addEventListener('load', () => {
 
 		breakpoints: {
 			1440: {
-				slidesPerView: 2.7,
+				slidesPerView: 2.66,
 				spaceBetween: 32,
 			},
 		},
@@ -36,6 +36,13 @@ window.addEventListener('load', () => {
 
 	const swiperOffers = new Swiper('.offers__swiper', {
 		...baseSwiperConfig,
+
+		breakpoints: {
+			1440: {
+				slidesPerView: 3,
+				spaceBetween: 32,
+			},
+		},
 		navigation: {
 			nextEl: '.offers__next',
 			prevEl: '.offers__prev',
