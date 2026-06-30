@@ -72,6 +72,10 @@
 	}
 
 	@include mq('desktop') {
+		position: relative;
+	}
+
+	&__list {
 		display: flex;
 		gap: 3rem;
 		font-size: 2rem;
@@ -83,20 +87,18 @@
 		&:hover {
 			color: $accent-color;
 		}
+	}
 
-		&.active {
-			position: relative;
-
-			&::after {
-				content: '';
-				position: absolute;
-				display: block;
-				height: 0.3rem;
-				width: 100%;
-				bottom: -0.4rem;
-				left: 0;
-				background-color: $accent-color;
-			}
-		}
+	&__underline {
+		position: absolute;
+		display: block;
+		bottom: -0.5rem;
+		left: 0;
+		height: 0.3rem;
+		width: 0;
+		background-color: $accent-color;
+		transition:
+			left 0.38s cubic-bezier(0.25, 1, 0.5, 1),
+			width 0.38s cubic-bezier(0.25, 1, 0.5, 1);
 	}
 }

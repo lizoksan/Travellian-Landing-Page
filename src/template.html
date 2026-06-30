@@ -15,7 +15,7 @@
 		/>
 	</head>
 	<body>
-		<header class="header" id="home">
+		<header class="header">
 			<div class="header__container container">
 				<div class="header__content">
 					<a class="logo" href="#home">
@@ -28,23 +28,26 @@
 							<use href="./assets/img/symbol-defs.svg#hamburger"></use>
 						</svg>
 					</button>
-					<ul class="nav">
-						<li class="nav__item">
-							<a class="nav__link link active" href="#home"><p class="nav__text">Home</p></a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link link" href="#dest"><p class="nav__text">Explore</p></a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link link" href="#planners"><p class="nav__text">Travel</p></a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link link" href="#blog"><p class="nav__text">Blog</p></a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link link" href="#offers"><p class="nav__text">Pricing</p></a>
-						</li>
-					</ul>
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link link active" href="#home"><p class="nav__text">Home</p></a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link link" href="#dest"><p class="nav__text">Explore</p></a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link link" href="#offers"><p class="nav__text">Travel</p></a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link link" href="#blog"><p class="nav__text">Blog</p></a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link link" href="#planners"><p class="nav__text">Pricing</p></a>
+							</li>
+						</ul>
+						<div class="nav__underline"></div>
+					</nav>
 					<ul class="header__authentication">
 						<li class="header__action">
 							<button class="header__btn_login btn" type="button">Login</button>
@@ -57,7 +60,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="hero">
+			<section class="hero" id="home">
 				<div class="container">
 					<h1 class="hero__title title">Start your unforgettable journey with us.</h1>
 					<h2 class="hero__subtitle">The best travel for your jouney begins now</h2>
