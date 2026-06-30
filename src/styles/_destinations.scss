@@ -24,8 +24,14 @@
 	}
 
 	&__img {
-		border-radius: 2.8rem;
 		object-fit: cover;
+		@include mq('desktop', max) {
+			border-radius: 1.6rem;
+		}
+
+		@include mq('desktop') {
+			border-radius: 2.8rem;
+		}
 	}
 
 	&__info {

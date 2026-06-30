@@ -40,6 +40,11 @@ html {
 			width: 23.4rem;
 			height: 5rem;
 		}
+
+		&--footer {
+			width: 23.5rem;
+			height: 4.5rem;
+		}
 	}
 }
 
@@ -92,13 +97,11 @@ img {
 	@include mq('desktop', max) {
 		width: 28.8rem;
 		height: 32rem;
-		border-radius: 2.6rem;
 	}
 
 	@include mq('desktop') {
 		width: 49.7rem;
 		height: 66.1rem;
-		border-radius: 2.8rem;
 	}
 }
 

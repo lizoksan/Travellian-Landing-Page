@@ -64,7 +64,13 @@
 					<form class="form">
 						<div class="form__wrapper">
 							<label class="form__label" for="destination"> Destination</label>
-							<input class="form__input" type="text" id="destination" name="destination" />
+							<input
+								class="form__input"
+								type="text"
+								id="destination"
+								name="destination"
+								placeholder="Dubai"
+							/>
 						</div>
 						<div class="form__wrapper">
 							<label class="form__label" for="select">Person</label>
@@ -106,22 +112,18 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-desk1.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/dest-desk1.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/dest-desk1.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source
-												srcset="./assets/img/dest-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
 
 											<img
 												class="destinations__img img"
@@ -144,22 +146,120 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-desk2.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/dest-desk2.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/dest-desk2.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
+											/>
+
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
+
+											<img
+												class="destinations__img img"
+												src="./assets/img/dest-mob1.jpg"
+												alt="Millennium Bridge"
+											/>
+										</picture>
+										<div class="destinations__info">
+											<p class="destinations__title">Millennium Bridge</p>
+											<div class="destinations__location">
+												<svg class="destinations__icon" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#location"></use>
+												</svg>
+												<p class="destinations__text">London, United Kingdom</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="destinations__slide swiper-slide">
+									<div class="destinations__box">
+										<picture class="destinations__picture picture">
+											<source
+												srcset="./assets/img/dest-desk3.webp"
+												type="image/webp"
+												media="(min-width: 1440px)"
 											/>
 
 											<source
-												srcset="./assets/img/dest-mob1.jpg"
+												srcset="./assets/img/dest-desk3.jpg"
 												type="image/jpeg"
-												media="(max-width: 767px)"
+												media="(min-width: 1440px)"
 											/>
+
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
+
+											<img
+												class="destinations__img img"
+												src="./assets/img/dest-mob1.jpg"
+												alt="Rialto Bridge"
+											/>
+										</picture>
+										<div class="destinations__info">
+											<p class="destinations__title">Rialto Bridge</p>
+											<div class="destinations__location">
+												<svg class="destinations__icon" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#location"></use>
+												</svg>
+												<p class="destinations__text">Venice, Italy</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="destinations__slide swiper-slide">
+									<div class="destinations__box">
+										<picture class="destinations__picture picture">
+											<source
+												srcset="./assets/img/dest-desk2.webp"
+												type="image/webp"
+												media="(min-width: 1440px)"
+											/>
+
+											<source
+												srcset="./assets/img/dest-desk2.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
+
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
+
+											<img
+												class="destinations__img img"
+												src="./assets/img/dest-mob1.jpg"
+												alt="Millennium Bridge"
+											/>
+										</picture>
+										<div class="destinations__info">
+											<p class="destinations__title">Millennium Bridge</p>
+											<div class="destinations__location">
+												<svg class="destinations__icon" width="24" height="24">
+													<use href="./assets/img/symbol-defs.svg#location"></use>
+												</svg>
+												<p class="destinations__text">London, United Kingdom</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="destinations__slide swiper-slide">
+									<div class="destinations__box">
+										<picture class="destinations__picture picture">
+											<source
+												srcset="./assets/img/dest-desk1.webp"
+												type="image/webp"
+												media="(min-width: 1440px)"
+											/>
+
+											<source
+												srcset="./assets/img/dest-desk1.jpg"
+												type="image/jpeg"
+												media="(min-width: 1440px)"
+											/>
+
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
 
 											<img
 												class="destinations__img img"
@@ -182,45 +282,32 @@
 									<div class="destinations__box">
 										<picture class="destinations__picture picture">
 											<source
-												srcset="./assets/img/dest-desk3.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/dest-desk3.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/dest-desk3.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source
-												srcset="./assets/img/dest-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
+											<source srcset="./assets/img/dest-mob1.webp" type="image/webp" />
 
 											<img
 												class="destinations__img img"
 												src="./assets/img/dest-mob1.jpg"
-												alt="Monument of Berlin"
+												alt="Rialto Bridge"
 											/>
 										</picture>
 										<div class="destinations__info">
-											<p class="destinations__title">Monument of Berlin</p>
+											<p class="destinations__title">Rialto Bridge</p>
 											<div class="destinations__location">
 												<svg class="destinations__icon" width="24" height="24">
 													<use href="./assets/img/symbol-defs.svg#location"></use>
 												</svg>
-												<p class="destinations__text">Berlin, Germany</p>
-											</div>
-										</div>
-										<div class="destinations__info">
-											<p class="destinations__title">Monument of Berlin</p>
-											<div class="destinations__location">
-												<svg class="destinations__icon" width="24" height="24">
-													<use href="./assets/img/symbol-defs.svg#location"></use>
-												</svg>
-												<p class="destinations__text">Berlin, Germany</p>
+												<p class="destinations__text">Venice, Italy</p>
 											</div>
 										</div>
 									</div>
@@ -256,28 +343,25 @@
 							<div class="offers__wrapper swiper-wrapper">
 								<div class="offers__slide swiper-slide">
 									<div class="card">
-										<picture class="card__picture picture">
+										<picture class="offers__picture picture">
 											<source
-												srcset="./assets/img/offers-desk1.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/offers-desk1.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/offers-desk1.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
+											<source srcset="./assets/img/offers-mob1.webp" type="image/webp" />
+
 											<img
 												class="offers__img img"
 												src="./assets/img/offers-mob1.jpg"
-												alt="Monument of Berlin"
+												alt="Lisbon, Portugal"
 											/>
 										</picture>
 										<div class="card__info">
@@ -326,30 +410,25 @@
 								</div>
 								<div class="offers__slide swiper-slide">
 									<div class="card">
-										<picture class="card__picture picture">
+										<picture class="offers__picture picture">
+											<source
+												srcset="./assets/img/offers-desk2.webp"
+												type="image/webp"
+												media="(min-width: 1440px)"
+											/>
+
 											<source
 												srcset="./assets/img/offers-desk2.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
-											<source
-												srcset="./assets/img/offers-desk2.jpg"
-												type="image/jpeg"
-												media="(min-width: 768px)"
-											/>
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
-											<img
-												class="offers__img img"
-												src="./assets/img/offers-mob1.jpg"
-												alt="Monument of Berlin"
-											/>
+
+											<source srcset="./assets/img/offers-mob1.webp" type="image/webp" />
+
+											<img class="offers__img img" src="./assets/img/offers-mob1.jpg" alt="Athens, Greece" />
 										</picture>
 										<div class="card__info">
-											<p class="card__title">Lisbon, Portugal</p>
+											<p class="card__title">Athens, Greece</p>
 											<ul class="card__stars stars">
 												<li class="stars__item">
 													<svg class="stars__star stars__star--active" width="24" height="24">
@@ -385,7 +464,7 @@
 											<div class="card__action">
 												<div class="card__payment">
 													<p class="card__payment_text">From</p>
-													<p class="card__price">€500</p>
+													<p class="card__price">€800</p>
 												</div>
 												<a class="card__link link" href="./template.html">Details</a>
 											</div>
@@ -394,32 +473,25 @@
 								</div>
 								<div class="offers__slide swiper-slide">
 									<div class="card">
-										<picture class="card__picture picture">
+										<picture class="offers__picture picture">
+											<source
+												srcset="./assets/img/offers-desk3.webp"
+												type="image/webp"
+												media="(min-width: 1440px)"
+											/>
+
 											<source
 												srcset="./assets/img/offers-desk3.jpg"
 												type="image/jpeg"
 												media="(min-width: 1440px)"
 											/>
-											<source
-												srcset="./assets/img/offers-desk3.jpg"
-												type="image/jpeg"
-												media="(min-width: 768px)"
-											/>
 
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
+											<source srcset="./assets/img/offers-mob1.webp" type="image/webp" />
 
-											<img
-												class="offers__img img"
-												src="./assets/img/offers-mob1.jpg"
-												alt="Monument of Berlin"
-											/>
+											<img class="offers__img img" src="./assets/img/offers-mob1.jpg" alt="Rome, Italy" />
 										</picture>
 										<div class="card__info">
-											<p class="card__title">Lisbon, Portugal</p>
+											<p class="card__title">Rome, Italy</p>
 											<ul class="card__stars stars">
 												<li class="stars__item">
 													<svg class="stars__star stars__star--active" width="24" height="24">
@@ -456,7 +528,7 @@
 											<div class="card__action">
 												<div class="card__payment">
 													<p class="card__payment_text">From</p>
-													<p class="card__price">€500</p>
+													<p class="card__price">€750</p>
 												</div>
 												<a class="card__link link" href="./template.html">Details</a>
 											</div>
@@ -465,33 +537,25 @@
 								</div>
 								<div class="offers__slide swiper-slide">
 									<div class="card">
-										<picture class="card__picture picture">
+										<picture class="offers__picture picture">
 											<source
-												srcset="./assets/img/offers-desk2.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/offers-desk2.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/offers-desk2.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source
-												srcset="./assets/img/offers-mob1.jpg"
-												type="image/jpeg"
-												media="(max-width: 767px)"
-											/>
+											<source srcset="./assets/img/offers-mob1.webp" type="image/webp" />
 
-											<img
-												class="offers__img img"
-												src="./assets/img/offers-mob1.jpg"
-												alt="Monument of Berlin"
-											/>
+											<img class="offers__img img" src="./assets/img/offers-mob1.jpg" alt="Athens, Greece" />
 										</picture>
 										<div class="card__info">
-											<p class="card__title">Lisbon, Portugal</p>
+											<p class="card__title">Athens, Greece</p>
 											<ul class="card__stars stars">
 												<li class="stars__item">
 													<svg class="stars__star stars__star--active" width="24" height="24">
@@ -527,7 +591,7 @@
 											<div class="card__action">
 												<div class="card__payment">
 													<p class="card__payment_text">From</p>
-													<p class="card__price">€500</p>
+													<p class="card__price">€800</p>
 												</div>
 												<a class="card__link link" href="./template.html">Details</a>
 											</div>
@@ -562,13 +626,13 @@
 					<h3 class="description">An insight the incredible experience in the world</h3>
 					<div class="blog__info">
 						<picture class="blog__picture picture">
+							<source srcset="./assets/img/blog-desk.webp" type="image/webp" media="(min-width: 1440px)" />
+
 							<source srcset="./assets/img/blog-desk.jpg" type="image/jpeg" media="(min-width: 1440px)" />
 
-							<source srcset="./assets/img/blog-desk.jpg" type="image/jpeg" media="(min-width: 768px)" />
+							<source srcset="./assets/img/blog-mob.webp" type="image/webp" />
 
-							<source srcset="./assets/img/blog-mob.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-							<img class="blog__img img" src="./assets/img/blog-mob.jpg" alt="Monument of Berlin" />
+							<img class="blog__img img" src="./assets/img/blog-mob.jpg" alt="Italy" />
 						</picture>
 						<div class="blog__content">
 							<p class="blog__subtitle">Beautiful Italy Let’s travel</p>
@@ -606,23 +670,23 @@
 						<div class="planners__swiper">
 							<div class="planners__wrapper swiper-wrapper">
 								<div class="planners__slide swiper-slide">
-									<a class="tour link" href="./template.html"
-										><picture class="tour__picture picture">
+									<a class="tour link" href="./template.html">
+										<picture class="tour__picture picture">
 											<source
-												srcset="./assets/img/tour-desk1.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/tour-desk1.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/tour-desk1.jpg"
 												type="image/jpeg"
-												media="(min-width: 768px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source srcset="./assets/img/tour-mob1.webp" type="image/webp" />
 
-											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="tour__img img" src="./assets/img/tour-mob1.jpg" alt="Rome" />
 										</picture>
 										<div class="tour__info">
 											<div class="tour__price">
@@ -667,20 +731,20 @@
 									<a class="tour link" href="./template.html"
 										><picture class="tour__picture picture">
 											<source
-												srcset="./assets/img/tour-desk2.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/tour-desk2.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/tour-desk2.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source srcset="./assets/img/tour-mob2.webp" type="image/webp" />
 
-											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="tour__img img" src="./assets/img/tour-mob2.jpg" alt="Paris" />
 										</picture>
 										<div class="tour__info">
 											<div class="tour__price">
@@ -725,20 +789,20 @@
 									<a class="tour link" href="./template.html"
 										><picture class="tour__picture picture">
 											<source
-												srcset="./assets/img/tour-desk3.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/tour-desk3.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/tour-desk3.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source srcset="./assets/img/tour-mob3.webp" type="image/webp" />
 
-											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="tour__img img" src="./assets/img/tour-mob3.jpg" alt="Barcelona" />
 										</picture>
 										<div class="tour__info">
 											<div class="tour__price">
@@ -783,20 +847,20 @@
 									<a class="tour link" href="./template.html"
 										><picture class="tour__picture picture">
 											<source
-												srcset="./assets/img/tour-desk4.jpg"
-												type="image/jpeg"
+												srcset="./assets/img/tour-desk4.webp"
+												type="image/webp"
 												media="(min-width: 1440px)"
 											/>
 
 											<source
 												srcset="./assets/img/tour-desk4.jpg"
 												type="image/jpeg"
-												media="(min-width: 1439px)"
+												media="(min-width: 1440px)"
 											/>
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+											<source srcset="./assets/img/tour-mob4.webp" type="image/webp" />
 
-											<img class="tour__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="tour__img img" src="./assets/img/tour-mob4.jpg" alt="Budapest" />
 										</picture>
 										<div class="tour__info">
 											<div class="tour__price">
@@ -852,96 +916,177 @@
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
 										<source
-											srcset="./assets/img/gallery-desk1.jpg"
-											type="image/jpeg"
+											srcset="./assets/img/gallery-desk1.webp"
+											type="image/webp"
 											media="(min-width: 1440px)"
 										/>
 
 										<source
 											srcset="./assets/img/gallery-desk1.jpg"
 											type="image/jpeg"
-											media="(min-width: 768px)"
+											media="(min-width: 1440px)"
 										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/gallery-mob1.webp" type="image/webp" />
 
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										<img class="gallery__img img" src="./assets/img/gallery-mob1.jpg" alt="man in gallery" />
 									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
 										<source
-											srcset="./assets/img/gallery-desk2.jpg"
-											type="image/jpeg"
+											srcset="./assets/img/gallery-desk2.webp"
+											type="image/webp"
 											media="(min-width: 1440px)"
 										/>
 
 										<source
 											srcset="./assets/img/gallery-desk2.jpg"
 											type="image/jpeg"
-											media="(min-width: 768px)"
+											media="(min-width: 1440px)"
 										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/gallery-mob2.webp" type="image/webp" />
 
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob2.jpg"
+											alt="A couple on the ocean shore"
+										/>
 									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
 										<source
-											srcset="./assets/img/gallery-desk3.jpg"
-											type="image/jpeg"
+											srcset="./assets/img/gallery-desk3.webp"
+											type="image/webp"
 											media="(min-width: 1440px)"
 										/>
 
 										<source
 											srcset="./assets/img/gallery-desk3.jpg"
 											type="image/jpeg"
-											media="(min-width: 768px)"
+											media="(min-width: 1440px)"
 										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/gallery-mob3.webp" type="image/webp" />
 
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob3.jpg"
+											alt="A man in the Old City"
+										/>
 									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk4.webp"
+											type="image/webp"
+											media="(min-width: 1440px)"
+										/>
+
 										<source
 											srcset="./assets/img/gallery-desk4.jpg"
 											type="image/jpeg"
 											media="(min-width: 1440px)"
 										/>
 
-										<source
-											srcset="./assets/img/gallery-desk4.jpg"
-											type="image/jpeg"
-											media="(min-width: 768px)"
+										<source srcset="./assets/img/gallery-mob4.webp" type="image/webp" />
+
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob4.jpg"
+											alt="A man on the railway tracks"
 										/>
-
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
 									</picture>
 								</div>
 								<div class="gallery__slide swiper-slide">
 									<picture class="gallery__picture picture">
 										<source
-											srcset="./assets/img/gallery-desk3.jpg"
-											type="image/jpeg"
+											srcset="./assets/img/gallery-desk3.webp"
+											type="image/webp"
 											media="(min-width: 1440px)"
 										/>
 
 										<source
 											srcset="./assets/img/gallery-desk3.jpg"
 											type="image/jpeg"
-											media="(min-width: 768px)"
+											media="(min-width: 1440px)"
 										/>
 
-										<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
+										<source srcset="./assets/img/gallery-mob3.webp" type="image/webp" />
 
-										<img class="gallery__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob3.jpg"
+											alt="A man in the Old City"
+										/>
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk2.webp"
+											type="image/webp"
+											media="(min-width: 1440px)"
+										/>
+
+										<source
+											srcset="./assets/img/gallery-desk2.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
+
+										<source srcset="./assets/img/gallery-mob2.webp" type="image/webp" />
+
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob2.jpg"
+											alt="A couple on the ocean shore"
+										/>
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk1.webp"
+											type="image/webp"
+											media="(min-width: 1440px)"
+										/>
+
+										<source
+											srcset="./assets/img/gallery-desk1.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
+
+										<source srcset="./assets/img/gallery-mob1.webp" type="image/webp" />
+
+										<img class="gallery__img img" src="./assets/img/gallery-mob1.jpg" alt="man in gallery" />
+									</picture>
+								</div>
+								<div class="gallery__slide swiper-slide">
+									<picture class="gallery__picture picture">
+										<source
+											srcset="./assets/img/gallery-desk3.webp"
+											type="image/webp"
+											media="(min-width: 1440px)"
+										/>
+
+										<source
+											srcset="./assets/img/gallery-desk3.jpg"
+											type="image/jpeg"
+											media="(min-width: 1440px)"
+										/>
+
+										<source srcset="./assets/img/gallery-mob3.webp" type="image/webp" />
+
+										<img
+											class="gallery__img img"
+											src="./assets/img/gallery-mob3.jpg"
+											alt="A man in the Old City"
+										/>
 									</picture>
 								</div>
 							</div>
@@ -977,13 +1122,10 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="review">
 										<picture class="review__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/review1.webp" type="image/webp" />
+											<source srcset="./assets/img/review1.jpg" type="image/jpeg" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 768px)" />
-
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-											<img class="review__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="review__img img" src="./assets/img/review1.jpg" alt="review avatar" />
 										</picture>
 										<p class="review__text">
 											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -1027,13 +1169,10 @@
 								<div class="reviews__slide swiper-slide">
 									<div class="review">
 										<picture class="review__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/review2.webp" type="image/webp" />
+											<source srcset="./assets/img/review2.jpg" type="image/jpeg" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 768px)" />
-
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-											<img class="review__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="review__img img" src="./assets/img/review2.jpg" alt="review avatar" />
 										</picture>
 										<p class="review__text">
 											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -1069,21 +1208,18 @@
 											</li>
 										</ul>
 										<div class="review__name">
-											<p class="review__title">John Doe</p>
-											<p class="review__subtitle">Accountant</p>
+											<p class="review__title">John Smith</p>
+											<p class="review__subtitle">Journalist, HWO News</p>
 										</div>
 									</div>
 								</div>
 								<div class="reviews__slide swiper-slide">
 									<div class="review">
 										<picture class="review__picture picture">
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1440px)" />
+											<source srcset="./assets/img/review3.webp" type="image/webp" />
+											<source srcset="./assets/img/review3.jpg" type="image/jpeg" />
 
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(min-width: 1439px)" />
-
-											<source srcset="./assets/img/block.jpg" type="image/jpeg" media="(max-width: 767px)" />
-
-											<img class="review__img img" src="./assets/img/block.jpg" alt="Monument of Berlin" />
+											<img class="review__img img" src="./assets/img/review3.jpg" alt="review avatar" />
 										</picture>
 										<p class="review__text">
 											But I must explain to you how all this mistaken idea of denouncing pleasure and praising
@@ -1119,8 +1255,8 @@
 											</li>
 										</ul>
 										<div class="review__name">
-											<p class="review__title">John Doe</p>
-											<p class="review__subtitle">Accountant</p>
+											<p class="review__title">Tamara Bellis</p>
+											<p class="review__subtitle">Managing Director, JTH</p>
 										</div>
 									</div>
 								</div>
@@ -1172,7 +1308,7 @@
 					<li class="footer__column">
 						<div class="footer__brand">
 							<a class="logo" href="#home">
-								<svg class="logo__icon" width="235" height="45.5">
+								<svg class="logo__icon logo__icon--footer" width="235" height="45.5">
 									<use href="./assets/img/symbol-defs.svg#Logo1"></use>
 								</svg>
 							</a>

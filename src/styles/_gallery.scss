@@ -33,6 +33,8 @@
 	}
 
 	&__img {
+		border-radius: 2.6rem;
+
 		@include mq('desktop') {
 			width: 32rem;
 			height: 47rem;

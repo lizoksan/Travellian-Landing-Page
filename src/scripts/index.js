@@ -11,19 +11,28 @@ window.addEventListener('load', () => {
 	const checkinInput = document.getElementById('checkin');
 	const checkoutInput = document.getElementById('checkout');
 
+	const nextWeekDate = new Date();
+	nextWeekDate.setDate(nextWeekDate.getDate() + 7);
+
+	const commonFlatpickrConfig = {
+		minDate: 'today',
+		disableMobile: true,
+		altInput: true,
+		altFormat: 'D, j M Y',
+		dateFormat: 'Y-m-d',
+	};
+
 	if (checkinInput) {
 		flatpickr(checkinInput, {
-			altInput: true,
-			altFormat: 'D, j M Y',
-			dateFormat: 'Y-m-d',
+			...commonFlatpickrConfig,
+			defaultDate: 'today',
 		});
 	}
 
 	if (checkoutInput) {
 		flatpickr(checkoutInput, {
-			altInput: true,
-			altFormat: 'D, j M Y',
-			dateFormat: 'Y-m-d',
+			...commonFlatpickrConfig,
+			defaultDate: nextWeekDate,
 		});
 	}
 
@@ -49,6 +58,7 @@ window.addEventListener('load', () => {
 
 	const swiperDest = new Swiper('.destinations__swiper', {
 		...baseSwiperConfig,
+		initialSlide: 0,
 		navigation: {
 			nextEl: '.destinations__next',
 			prevEl: '.destinations__prev',

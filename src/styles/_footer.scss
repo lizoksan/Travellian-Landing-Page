@@ -13,14 +13,7 @@
 	&__brand {
 		display: flex;
 		flex-direction: column;
-
-		@include mq('desktop', max) {
-			gap: 1.4rem;
-		}
-
-		@include mq('desktop') {
-			gap: 0.8rem;
-		}
+		gap: 1.4rem;
 	}
 
 	&__copyright {
