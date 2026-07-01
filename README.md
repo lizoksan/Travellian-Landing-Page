@@ -2,6 +2,10 @@
 
 A landing page for the Travellian travel agency. The project is adapted for mobile screens and desktop, featuring clean code structure and smooth sliders for a better user experience.
 
+## Live Demo
+
+You can check out the live website here: [https://lizoksan.github.io/Travellian-Landing-Page/](https://lizoksan.github.io/Travellian-Landing-Page/)
+
 ## Technologies and Features
 
 - HTML5 and CSS (SCSS) — semantic markup and modular styles using BEM methodology.
