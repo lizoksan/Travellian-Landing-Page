@@ -27,7 +27,7 @@
 		@include mq('desktop') {
 			display: flex;
 			position: relative;
-			z-index: 2;
+			z-index: 5;
 			padding: 6.2rem 6rem 6rem 7.8rem;
 		}
 	}
