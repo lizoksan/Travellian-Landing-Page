@@ -46,6 +46,14 @@
 		margin-bottom: 5.7rem;
 	}
 
+	&__slide.swiper-slide {
+		@include mq('desktop', max) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
 	&__swich {
 		@include mq('desktop') {
 			top: -16.32rem;
@@ -62,6 +70,7 @@
 	&__info {
 		@include mq('desktop', max) {
 			padding: 2.5rem 2rem 2rem;
+			max-width: 28.8rem;
 		}
 
 		@include mq('desktop') {

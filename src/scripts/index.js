@@ -8,6 +8,9 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
 window.addEventListener('load', () => {
+	const header = document.querySelector('.header');
+	const burger = document.querySelector('.header__burger');
+	const mobileMenu = document.querySelector('.header__mobile_menu');
 	const nav = document.querySelector('.nav');
 	const navLinks = document.querySelectorAll('.nav__link');
 	const underline = document.querySelector('.nav__underline');
@@ -17,6 +20,70 @@ window.addEventListener('load', () => {
 	const checkoutInput = document.getElementById('checkout');
 	const nextWeekDate = new Date();
 	nextWeekDate.setDate(nextWeekDate.getDate() + 7);
+
+	function throttle(func, delay) {
+		let isThrottled = false;
+
+		return function (...args) {
+			if (isThrottled) return;
+
+			func.apply(this, args);
+			isThrottled = true;
+
+			setTimeout(() => {
+				isThrottled = false;
+			}, delay);
+		};
+	}
+
+	const checkScrollStatus = () => {
+		if (window.scrollY > 100) {
+			header.classList.add('active');
+		} else {
+			header.classList.remove('active');
+		}
+	};
+
+	const optimizedScroll = throttle(checkScrollStatus, 100);
+
+	window.addEventListener('scroll', optimizedScroll, { passive: true });
+
+	const openMenu = () => {
+		mobileMenu.classList.toggle('open');
+		header.classList.toggle('menu_open');
+
+		if (mobileMenu.classList.contains('open')) {
+			document.body.style.overflow = 'hidden';
+			header.classList.add('active');
+		} else {
+			document.body.style.overflow = '';
+			checkScrollStatus();
+		}
+	};
+
+	burger.addEventListener('click', openMenu);
+
+	const menuLinks = document.querySelectorAll('.nav__link');
+
+	const closeAllMenuStates = () => {
+		mobileMenu.classList.remove('open');
+		header.classList.remove('menu_open');
+		document.body.style.overflow = '';
+		checkScrollStatus();
+	};
+
+	menuLinks.forEach((link) => link.addEventListener('click', closeAllMenuStates));
+
+	const closeMenuOnResize = () => {
+		if (window.innerWidth >= 768) {
+			if (mobileMenu.classList.contains('open')) {
+				closeAllMenuStates();
+			}
+		}
+	};
+
+	const optimizedResize = throttle(closeMenuOnResize, 150);
+	window.addEventListener('resize', optimizedResize);
 
 	function moveUnderline(element) {
 		if (!element) return;
@@ -114,23 +181,20 @@ window.addEventListener('load', () => {
 	const baseSwiperConfig = {
 		modules: [Navigation],
 		direction: 'horizontal',
-		loop: false,
 		grabCursor: true,
-		initialSlide: 1,
+		initialSlide: 0,
 		freeMode: true,
 		scrollbar: false,
-		spaceBetween: 16,
-		slidesPerView: 1,
+
 		watchSlidesProgress: true,
 
 		breakpoints: {
 			320: {
-				// slidesPerView: 1,
+				slidesPerView: 1,
+				spaceBetween: 16,
 				loop: true,
 			},
-		},
 
-		breakpoints: {
 			1440: {
 				slidesPerView: 2.66,
 				spaceBetween: 32,
@@ -141,7 +205,7 @@ window.addEventListener('load', () => {
 
 	const swiperDest = new Swiper('.destinations__swiper', {
 		...baseSwiperConfig,
-		initialSlide: 0,
+
 		navigation: {
 			nextEl: '.destinations__next',
 			prevEl: '.destinations__prev',
@@ -152,9 +216,11 @@ window.addEventListener('load', () => {
 		...baseSwiperConfig,
 
 		breakpoints: {
+			...baseSwiperConfig.breakpoints,
 			1440: {
 				slidesPerView: 3,
 				spaceBetween: 32,
+				loop: true,
 			},
 		},
 		navigation: {
@@ -171,9 +237,16 @@ window.addEventListener('load', () => {
 		},
 
 		breakpoints: {
+			320: {
+				...baseSwiperConfig.breakpoints[320],
+				freeMode: false,
+			},
+
 			1440: {
 				slidesPerView: 2.372,
 				spaceBetween: 32,
+				loop: false,
+				freeMode: true,
 			},
 		},
 	});

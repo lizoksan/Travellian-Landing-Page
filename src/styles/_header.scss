@@ -1,7 +1,7 @@
 .header {
 	position: fixed;
 	width: 100%;
-
+	z-index: 10;
 	color: $white-color;
 
 	@include mq('desktop', max) {
@@ -12,6 +12,20 @@
 		padding: 3.3rem 0 2.4rem;
 	}
 
+	&.active {
+		background: rgba(23, 36, 50, 0.36);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(0.79rem);
+		-webkit-backdrop-filter: blur(0.79rem);
+
+		&.menu_open {
+			backdrop-filter: none;
+			-webkit-backdrop-filter: none;
+			background: transparent;
+			box-shadow: none;
+		}
+	}
+
 	&__container {
 		@include mq('desktop', max) {
 			padding: 0 3.2rem;
@@ -20,12 +34,52 @@
 
 	&__content {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		gap: 6rem;
+
+		@include mq('desktop', max) {
+			justify-content: space-between;
+			gap: 2em;
+		}
+
+		@include mq('desktop') {
+			gap: 25rem;
+		}
+	}
+
+	&__mobile_menu {
+		@include mq('desktop', max) {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			max-width: 400px;
+			height: 100vh;
+			padding: 10rem 4rem 4rem;
+			font-size: 1.8rem;
+
+			background: rgba(23, 36, 50, 0.65);
+			box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(0.79rem);
+			-webkit-backdrop-filter: blur(0.79rem);
+
+			transform: translateX(100%);
+			transition: transform 0.4s ease;
+
+			&.open {
+				transform: translateX(0);
+			}
+		}
+
+		@include mq('desktop') {
+			display: flex;
+			align-items: center;
+			gap: 22.8rem;
+		}
 	}
 
 	&__burger {
+		position: relative;
+		z-index: 10;
 		padding: 0;
 		color: $white-color;
 		background-color: transparent;
@@ -40,35 +94,55 @@
 	}
 
 	&__authentication {
+		display: flex;
+
 		@include mq('desktop', max) {
-			display: none;
+			flex-direction: column;
+			gap: 2rem;
+			width: 100%;
 		}
 
 		@include mq('desktop') {
-			display: flex;
 			gap: 1rem;
+		}
+	}
+
+	&__btn_login,
+	&__btn_signup {
+		color: $white-color;
+		font-size: 2rem;
+
+		@include mq('desktop', max) {
+			width: 100%;
+			border: 0.1rem solid $accent-color;
+			border-radius: 1.2rem;
 		}
 	}
 
 	&__btn_login {
 		padding: 2rem 2.5rem;
 		background-color: transparent;
-		color: $white-color;
-		font-size: 2rem;
+
+		&:hover {
+			background-color: $accent-color;
+		}
 	}
 
 	&__btn_signup {
 		padding: 2rem 3.2rem;
 		background-color: $accent-color;
-		color: $white-color;
-		font-size: 2rem;
+
 		border-radius: 1.2rem;
+
+		&:hover {
+			color: $accent-dark-color;
+		}
 	}
 }
 
 .nav {
 	@include mq('desktop', max) {
-		display: none;
+		display: block;
 	}
 
 	@include mq('desktop') {
@@ -77,8 +151,17 @@
 
 	&__list {
 		display: flex;
-		gap: 3rem;
-		font-size: 2rem;
+
+		@include mq('desktop', max) {
+			flex-direction: column;
+			gap: 2.5rem;
+			margin-bottom: 4rem;
+		}
+
+		@include mq('desktop') {
+			gap: 3.3rem;
+			font-size: 2rem;
+		}
 	}
 
 	&__link {
@@ -90,15 +173,21 @@
 	}
 
 	&__underline {
-		position: absolute;
-		display: block;
-		bottom: -0.5rem;
-		left: 0;
-		height: 0.3rem;
-		width: 0;
-		background-color: $accent-color;
-		transition:
-			left 0.38s cubic-bezier(0.25, 1, 0.5, 1),
-			width 0.38s cubic-bezier(0.25, 1, 0.5, 1);
+		@include mq('desktop', max) {
+			display: none;
+		}
+
+		@include mq('desktop') {
+			position: absolute;
+			display: block;
+			bottom: -0.5rem;
+			left: 0;
+			height: 0.3rem;
+			width: 0;
+			background-color: $accent-color;
+			transition:
+				left 0.38s cubic-bezier(0.25, 1, 0.5, 1),
+				width 0.38s cubic-bezier(0.25, 1, 0.5, 1);
+		}
 	}
 }

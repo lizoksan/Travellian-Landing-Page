@@ -105,6 +105,14 @@
 		}
 	}
 
+	&__slide.swiper-slide {
+		@include mq('desktop', max) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
 	&__wrapper {
 		@include mq('desktop', max) {
 			display: flex;
@@ -120,6 +128,10 @@
 .tour {
 	position: relative;
 	color: $accent-dark-color;
+
+	@include mq('desktop', max) {
+		max-width: 28.8rem;
+	}
 
 	&__picture {
 		@include mq('desktop') {
@@ -169,6 +181,7 @@
 	&__type {
 		text-transform: uppercase;
 	}
+
 	&__name {
 		font-family: $font-title;
 		font-size: 2.8rem;

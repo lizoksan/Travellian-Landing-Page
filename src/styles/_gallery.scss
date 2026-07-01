@@ -26,9 +26,12 @@
 		}
 	}
 
-	&__slide {
+	&__slide.swiper-slide {
 		@include mq('desktop', max) {
 			height: calc((100% - 9.6rem) / 4) !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
