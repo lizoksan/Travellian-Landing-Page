@@ -7,13 +7,13 @@ html {
 
 	background-color: $white-color;
 
-	// @media (min-width: 360px) {
-	// 	font-size: 10px;
-	// }
+	@media (min-width: 320px) {
+		font-size: 10px;
+	}
 
-	// @media (min-width: 1920px) {
-	// 	font-size: calc(100vw / 1920 * 10);
-	// }
+	@media (min-width: 1024px) {
+		font-size: calc(100vw / 1440 * 10);
+	}
 }
 
 section {
@@ -115,16 +115,6 @@ img {
 	@include mq('desktop') {
 		width: 49.7rem;
 		height: 66.1rem;
-	}
-}
-
-.text {
-	@include mq('desktop', max) {
-		background-color: $white-color;
-	}
-
-	@include mq('desktop') {
-		background-color: $black-color;
 	}
 }
 

@@ -12611,8 +12611,10 @@ window.addEventListener('load', () => {
     if (mobileMenu.classList.contains('open')) {
       document.body.style.overflow = 'hidden';
       header.classList.add('active');
+      burger.classList.add('active');
     } else {
       document.body.style.overflow = '';
+      burger.classList.remove('active');
       checkScrollStatus();
     }
   };
@@ -12621,6 +12623,7 @@ window.addEventListener('load', () => {
   const closeAllMenuStates = () => {
     mobileMenu.classList.remove('open');
     header.classList.remove('menu_open');
+    burger.classList.remove('active');
     document.body.style.overflow = '';
     checkScrollStatus();
   };
@@ -12717,7 +12720,6 @@ window.addEventListener('load', () => {
     direction: 'horizontal',
     grabCursor: true,
     initialSlide: 0,
-    freeMode: true,
     scrollbar: false,
     watchSlidesProgress: true,
     breakpoints: {
@@ -12726,7 +12728,7 @@ window.addEventListener('load', () => {
         spaceBetween: 16,
         loop: true
       },
-      1440: {
+      1024: {
         slidesPerView: 2.66,
         spaceBetween: 32,
         loop: false
@@ -12744,7 +12746,7 @@ window.addEventListener('load', () => {
     ...baseSwiperConfig,
     breakpoints: {
       ...baseSwiperConfig.breakpoints,
-      1440: {
+      1024: {
         slidesPerView: 3,
         spaceBetween: 32,
         loop: true
@@ -12766,7 +12768,7 @@ window.addEventListener('load', () => {
         ...baseSwiperConfig.breakpoints[320],
         freeMode: false
       },
-      1440: {
+      1024: {
         slidesPerView: 2.372,
         spaceBetween: 32,
         loop: false,
@@ -12776,12 +12778,11 @@ window.addEventListener('load', () => {
   });
   const swiperPlanners = new Swiper('.planners__swiper', {
     ...baseSwiperConfig,
-    enabled: false,
     breakpoints: {
-      1440: {
-        enabled: true,
+      1024: {
         slidesPerView: 2.82,
-        spaceBetween: 32
+        spaceBetween: 32,
+        loop: true
       }
     }
   });
@@ -12797,8 +12798,9 @@ window.addEventListener('load', () => {
       prevEl: '.gallery__prev'
     },
     breakpoints: {
-      1440: {
+      1024: {
         direction: 'horizontal',
+        loop: true,
         slidesPerView: 4,
         spaceBetween: 32,
         grid: {
