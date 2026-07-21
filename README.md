@@ -1,29 +1,37 @@
-# Travellian - Travel Agency Landing Page
+# ✈️ Travellian — Travel Agency Landing Page
 
-A landing page for the Travellian travel agency. The project is adapted for mobile screens and desktop, featuring clean code structure and smooth sliders for a better user experience.
+Pixel-perfect responsive landing page for a travel agency, built solo from a Figma design — semantic HTML, SCSS (BEM) and a custom Webpack build pipeline.
 
-## Live Demo
+![Travellian preview](docs/images/preview.jpg)
 
-You can check out the live website here: [https://lizoksan.github.io/Travellian-Landing-Page/](https://lizoksan.github.io/Travellian-Landing-Page/)
 
-## Technologies and Features
+🔗 **Live demo:** https://lizoksan.github.io/Travellian-Landing-Page/
 
-- HTML5 and CSS (SCSS) — semantic markup and modular styles using BEM methodology.
-- Responsiveness — the website is designed for two main screen sizes: mobile (320px) and desktop (1440px).
-- Swiper.js — customized carousels for Destinations, Offers, and Reviews sections with individual settings for different screens.
-- Image Optimization — using the picture tag to support the modern .webp format with a fallback to .jpg.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?logo=webpack&logoColor=black)
 
-## How to Run the Project Locally
+## Key features
 
-1. Clone the repository:
-   git clone https://github.com/lizoksan/Travellian-Landing-Page.git
+- Built a pixel-perfect implementation of the Figma design, solo, using BEM methodology and a mobile-first approach
+- Developed Destination, Offers and Reviews carousels with Swiper.js, with individual settings per breakpoint (1 slide on mobile → up to 3 on desktop)
+- Integrated Flatpickr for interactive travel-date selection
+- Implemented `.webp` images with a `.jpg` fallback via the `<picture>` element for faster load times
+- Fully responsive from 320px (mobile) to 1440px+ (desktop)
 
-2. Navigate into the project folder:
-   cd Travellian-Landing-Page
+## What I learned
 
-3. Open the index.html file in your browser or run it using the Live Server extension in VS Code.
+- Configuring per-breakpoint Swiper instances (different `slidesPerView`, loop and centering settings for mobile vs desktop) instead of one fixed config
+- Setting up a production Webpack pipeline: image optimization (`imagemin`), CSS extraction (`mini-css-extract-plugin`), and auto-deploying the build into `docs/` for GitHub Pages
 
-## Layout Settings
+## Run locally
 
-- Mobile version (320px): sliders show 1 slide at a time, loop mode is enabled, and items are centered.
-- Desktop version (1440px): sliders are adapted to show multiple items at once (for example, 3 or 2.372 slides in a row), and centering is disabled for correct grid alignment.
+```bash
+git clone https://github.com/lizoksan/Travellian-Landing-Page.git
+cd Travellian-Landing-Page
+npm install
+
+npm start        # dev server with hot reload
+npm run build     # production build → docs/
+
